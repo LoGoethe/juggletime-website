@@ -1,13 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JuggleTime Entertainment</title>
-    <meta name="description" content="Professional circus and juggling performances for events!">
-    <meta name="keywords" content="juggling, circus, entertainment, performances, events">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #4F7B7D;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #4F7B7D;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, p { color: white; }
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        .video-container {
+            margin: 20px 0;
+        }
+        img { max-width: 100%; border-radius: 10px; }
+        .header {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .header a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-top: 60px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to JuggleTime Entertainment!</h1>
-    <p>Book world-class juggling performances for your event!</p>
+    <div class="header">
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#video">Video</a>
+        <a href="#connect">Contact</a>
+    </div>
+    
+    <div class="container content">
+        <!-- About Section -->
+        <h1 id="about">Welcome to JuggleTime Entertainment</h1>
+        <p>World-class circus and juggling performances for all occasions.</p>
+        
+        <!-- Gallery Section -->
+        <h2 id="gallery">Gallery</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Performance 1">
+            <img src="image2.jpg" alt="Performance 2">
+            <img src="image3.jpg" alt="Performance 3">
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-container" id="video">
+            <p>Watch me perform:</p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/gGuWNaBrAQw" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <!-- Contact Section -->
+        <h2 id="connect">Contact Me</h2>
+        <div class="social-links">
+            <a href="https://instagram.com/juggletime" target="_blank">Instagram</a>
+            <a href="https://facebook.com/juggletime" target="_blank">Facebook</a>
+            <a href="https://youtube.com/juggletime" target="_blank">YouTube</a>
+        </div>
+    </div>
 </body>
 </html>
+
