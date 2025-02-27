@@ -1,94 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JuggleTime Entertainment</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #4F7B7D;
-            color: white;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background: #4F7B7D;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2, p { color: white; }
-        .social-links a {
-            display: inline-block;
-            margin: 10px;
-            text-decoration: none;
-            color: white;
-        }
-        .video-container {
-            margin: 20px 0;
-        }
-        img { max-width: 100%; border-radius: 10px; }
-        .header {
-            background: rgba(0, 0, 0, 0.2);
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-        }
-        .header a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .header a:hover {
-            text-decoration: underline;
-        }
-        .content {
-            margin-top: 60px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JuggleTime - About</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+
 <body>
-    <div class="header">
-        <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#video">Video</a>
-        <a href="#connect">Contact</a>
-    </div>
-    
-    <div class="container content">
-        <!-- About Section -->
-        <h1 id="about">Welcome to JuggleTime Entertainment</h1>
-        <p>World-class circus and juggling performances for all occasions.</p>
-        
-        <!-- Gallery Section -->
-        <h2 id="gallery">Gallery</h2>
-        <div class="gallery">
-            <img src="image1.jpg" alt="Performance 1">
-            <img src="image2.jpg" alt="Performance 2">
-            <img src="image3.jpg" alt="Performance 3">
-        </div>
+  <header>
+    <h1>JuggleTime</h1>
+    <nav>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#performances">Performances</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#social">Social</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Video Section -->
-        <div class="video-container" id="video">
-            <p>Watch me perform:</p>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/gGuWNaBrAQw" frameborder="0" allowfullscreen></iframe>
+  <section id="about">
+
+    <div class="overlay"></div>
+
+    <div class="content">
+      <h2>JuggleTime</h2>
+      <p>Welcome to JuggleTime, where precision meets performance. Experience world-class juggling, dynamic movement, and an unforgettable stage presence.</p>
+      <p>With over 13 years of professional experience, JuggleTime brings energy, rhythm, and spectacle to every performance. From high-energy burlesque to mesmerizing juggling, each act is a showstopper.</p>
+      <div class="about-columns">
+        <div class="bio">
+          <h3>BIO</h3>
+          <p>Richard Hartnell is among the most distinguished American contact jugglers.</p>
+          <p>From the fundamentals to the far reaches, Richard’s grasp of contact juggling technique has earned him places as a coveted instructor and performer across the United States and another twelve countries beyond. He is a co-founder of the Bellingham Circus Guild in Washington State and a resident artist emeritus at some of the Bay Area’s premier studios of prop-based circus arts.</p>
         </div>
-        
-        <!-- Contact Section -->
-        <h2 id="connect">Contact Me</h2>
-        <div class="social-links">
-            <a href="https://instagram.com/juggletime" target="_blank">Instagram</a>
-            <a href="https://facebook.com/juggletime" target="_blank">Facebook</a>
-            <a href="https://youtube.com/juggletime" target="_blank">YouTube</a>
-        </div>
+        <blockquote>
+          <p>“In the very top percent of contact jugglers skill-wise”</p>
+          <cite>— DAS-ISOBAR.COM</cite>
+        </blockquote>
+      </div>
     </div>
+  </section>
+
+  <section id="performances" class="performances">
+    <div class="performance-columns">
+      <div class="performance-column">
+        <h3 id="stage">STAGE</h3>
+        <p>From intimate indie stages to tremendous festival fields, Richard has years of experience leaving audiences walking away buzzing about the act. Three stage acts run the gamut from high-energy circus feats to transcendent storytelling acts.</p>
+      </div>
+      <div class="performance-column">
+        <h3 id="ambiance">AMBIANCE</h3>
+        <p>Honed to perfection by hardened street audiences yet smoothly urbane in the parlor, Richard is top-notch at charming close-up audiences and adding flavor and visual ambiance to all kinds of events.</p>
+      </div>
+      <div class="performance-column">
+        <h3 id="fire">FIRE</h3>
+        <p>Well-known among fire spinners, Richard is one of a perhaps single-digit number of jugglers known to capably perform the “contact fireball” act. A previous resident artist at one of the world’s most famous fire-spinning collectives, he’s within arm’s reach of as many fire spinners as you need, guaranteed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section>
+    <h2 id="gallery">Gallery</h2>
+    <div class="gallery">
+      <img src="assets/background1.JPG" alt="Performance 1">
+      <img src="image2.jpg" alt="Performance 2">
+      <img src="image3.jpg" alt="Performance 3">
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section>
+    <div class="video-container" id="video">
+      <p>Watch me perform:</p>
+      <iframe width="70%" height="315" src="https://www.youtube.com/embed/gGuWNaBrAQw" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <h2 id="social">Social Media</h2>
+  <div class="social-links">
+    <a href="https://instagram.com/juggletime" target="_blank">Instagram</a>
+    <a href="https://facebook.com/juggletime" target="_blank">Facebook</a>
+    <a href="https://youtube.com/juggletime" target="_blank">YouTube</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 JuggleTime. All Rights Reserved.</p>
+  </footer>
 </body>
-</html>
 
+</html>
