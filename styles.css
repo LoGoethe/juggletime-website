@@ -23,6 +23,7 @@ header {
 header h1 {
   margin: 0;
   font-size: 1.8rem;
+  color: #fff;
 }
 
 /* Navigation */
@@ -39,13 +40,13 @@ nav {
 }
 
 .nav-links li {
-  margin: 0 1rem;
+  margin: 0 1.5rem;
 }
 
 .nav-links li a {
   color: #fff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.5s ease;
 }
 
 .nav-links li a:hover {
@@ -101,13 +102,13 @@ nav {
 
 /* Background Image */
 #about::before {
-  content: "";
   position: absolute;
+  content: "";
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("assets/background1.png") no-repeat center center/cover;
+  background: url("https://raw.githubusercontent.com/LoGoethe/juggletime-website/refs/heads/main/assets/background1.png") no-repeat center center/cover;
   background-attachment: fixed; /* Makes it static */
   z-index: -1;
 }
@@ -128,40 +129,11 @@ nav {
 .content {
   position: relative;
   z-index: 2;
-  max-width: 600px;
-}
-
-.about-columns {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 0px;
   max-width: 900px;
-  margin: 0 auto;
-}
-
-.bio {
-  flex: 2; /* Makes the bio section span 2/3 of the available space */
-  min-width: 0; /* Prevents the flex item from being too small */
-  text-align: left; /* Aligns text in the bio section to the left */
-}
-.bio p {
-  font-size: 1rem;
-}
-
-blockquote {
-  flex: 1; /* Makes the blockquote section span 1/3 of the available space */
-  min-width: 0; /* Prevents the flex item from being too small */
-  padding: 0px;
-  font-style: italic;
-}
-
-blockquote p {
-  font-size: 2rem; /* This makes the quote text twice as large as the normal text */
 }
 
 .content h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -169,6 +141,37 @@ blockquote p {
   font-size: 1.2rem;
   line-height: 1.5;
 }
+
+.about-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0px;
+  margin: 0 auto;
+}
+
+.bio {
+  flex: 2; /* Makes the bio section span 2/3 of the available space */
+  min-width: 0; /* Prevents the flex item from being too small */
+  text-align: left; 
+}
+
+.bio p {
+  font-size: 1.2rem;
+}
+
+.review {
+  flex: 1; /* Makes the blockquote section span 1/3 of the available space */
+  min-width: 0; 
+  padding: 0px;
+  font-style: italic;
+  font-size: 1.8rem;
+}
+
+.review cite {
+  font-size: 1rem;
+}
+
 /* Performances section */
 
 .performances {
