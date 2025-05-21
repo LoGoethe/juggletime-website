@@ -333,11 +333,12 @@
 
   <section class="section has-background-warning" id="contact">
     <div class="container">
-        <p class="title">Request  Quote</p>
+      <p class="title">Request  Quote</p>
+      <form id="contact-form" action="https://formsubmit.co/1fcab6a8155c84bc1b38c55b9e98011f" method="POST"> 
         <div class="field">
             <label class="label">Name</label>
             <div class="control has-icons-left">
-                <input type="text" class="input" placeholder="e.g. Jeff Goldblum">
+                <input name="name" type="text" class="input" placeholder="e.g. Jeff Goldblum">
                 <span class="icon is-small is-left">
                     <i class="fa fa-user"></i>
                   </span>
@@ -346,7 +347,7 @@
         <div class="field">
             <label class="label">Email</label>
             <div class="control has-icons-left">
-                <input type="email" class="input" placeholder="e.g. jeffgoldblum@gmail.com">
+                <input name="email" type="email" class="input" placeholder="e.g. jeffgoldblum@gmail.com">
                 <span class="icon is-small is-left">
                     <i class="fa fa-envelope"></i>
                   </span>
@@ -355,12 +356,13 @@
         <div class="field">
             <label class="label">Message</label>
             <div class="control">
-              <textarea class="textarea" placeholder="Request details e.g. event location, date, acts desired etc"></textarea>
+              <textarea name="message" class="textarea" placeholder="Request details e.g. event location, date, acts desired etc"></textarea>
             </div>
           </div>      
           <div class="control">
-            <button class="button is-light">Submit</button>
+            <button type="submit" class="button is-light">Submit</button>
           </div>
+      </form>
     </div>
   </section>
 
