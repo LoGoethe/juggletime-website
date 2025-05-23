@@ -1,0 +1,21 @@
+Default styles
+    colors (palatte hsl)
+    fonts
+
+Text updates
+    hero
+    styles
+    experience
+    testimonials
+
+correct images - one more row
+correct youtube video link
+new logo - adjust header footer size after
+
+testimonial modal
+
+Accessibility check
+SEO check
+
+Burlesque hidden page
+Teaching/private lessons page
