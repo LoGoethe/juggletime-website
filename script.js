@@ -93,5 +93,3 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === "ArrowLeft") showPrev();
     if (e.key === "ArrowRight") showNext();
   });
-
-  //form sendin
