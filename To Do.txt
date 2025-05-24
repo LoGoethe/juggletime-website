@@ -8,11 +8,16 @@ Text updates
     experience
     testimonials
 
-correct images - one more row
+correct images - 
+    one more row
+    image selection/sizing
+    
 correct youtube video link
 new logo - adjust header footer size after
 
 testimonial modal
+
+footer responsiveness layout @media queries
 
 Accessibility check
 SEO check
