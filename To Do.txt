@@ -11,9 +11,14 @@ Text updates
 correct images - 
     one more row
     image selection/sizing
+
+animations
+    carousel - slide switch, larger arrow change radius, larger hover text on images
+
     
 correct youtube video link
 new logo - adjust header footer size after
+add my paypal/venmo
 
 testimonial modal
 
@@ -23,4 +28,4 @@ Accessibility check
 SEO check
 
 Burlesque hidden page
-Teaching/private lessons page
+Teaching/private lessons pageee
