@@ -1,27 +1,23 @@
+MOST IMPORTANT
 Default styles
-    colors (palatte hsl)
     fonts
-
 Text updates
-    hero
-    styles
-    experience
     testimonials
+correct youtube video link - make highlight vid
+new logo - adjust header footer size after
+
+------------------------
 
 correct images - 
-    one more row
-    image selection/sizing
+    performance match show type
+    gallery
 
 animations
-    carousel - slide switch, larger arrow change radius, larger hover text on images
-
-    
-correct youtube video link
-new logo - adjust header footer size after
+    carousel - slide switch, larger arrow change radius, larger hover text on images?
 add my paypal/venmo
 
 testimonial modal
-
+color refinement
 footer responsiveness layout @media queries
 
 Accessibility check
