@@ -1,13 +1,7 @@
 MOST IMPORTANT
-Default styles
-    fonts
-Text updates
-    testimonials
-    hamburger dots
-    move About text to lower section
     
 correct youtube video link - make highlight vid
-gallery
+gallery images
 new logo - adjust header footer size after
 
 ------------------------
@@ -20,10 +14,10 @@ animations
     carousel - slide switch, larger arrow change radius, larger hover text on images?
 add my paypal/venmo
 
-testimonial modal
-color refinement
+color+font refinement
 footer responsiveness layout @media queries
 button hover text and border
+fixed top navbar clashing ith line animations
 
 Accessibility check
 SEO check

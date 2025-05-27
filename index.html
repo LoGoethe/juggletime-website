@@ -1,98 +1,94 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JuggleTime</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-    <script defer src="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="styles/debug.css"> -->
-    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-<link rel="shortcut icon" href="/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-<link rel="manifest" href="/favicon/site.webmanifest" />
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JuggleTime</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <script defer src="script.js"></script>
 </head>
+
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar is-fixed-top customnav" role="navigation" aria-label="main navigation">
+  <nav class="navbar customnav" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="#">
-          <img src="images/jt1.png" alt="logo">
+        <img src="images/jt1.png" alt="logo">
       </a>
-
       <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
-      
     </div>
     <div class="navbar-menu" id="navMenu">
-      <div class="navbar-start">
-      </div>
       <div class="navbar-end">
         <div class="navbar-item nav-links">
-            <a class="navbar-item" href="#about">About</a><span>&#8226;</span>
-            <a class="navbar-item" href="#performances">Performances</a><span>&#8226;</span>
-            <a class="navbar-item" href="#gallery">Gallery</a><span>&#8226;</span>
-            <a class="navbar-item" href="#contact">Contact</a>
+          <a class="navbar-item" href="#performances">Performances</a><span class="nav-dot">&#8226;</span>
+          <a class="navbar-item" href="#gallery">Gallery</a><span class="nav-dot">&#8226;</span>
+          <a class="navbar-item" href="#quote">Quote</a><span class="nav-dot">&#8226;</span>
+          <a class="navbar-item" href="#contact">Contact</a>
         </div>
       </div>
     </div>
   </nav>
 
-
   <!-- Hero Section -->
   <section id="about" class="hero is-fullheight">
-      <div class="hero-body has-text-centered outlined-text" style="padding-bottom: 100px; padding-top: 20%;">
+    <div class="hero-body has-text-centered outlined-text" style="padding-bottom: 100px; padding-top: 20%;">
       <div class="container">
-      <h1 class="title is-1 line-title is-spaced">JuggleTime Entertainment</h1>
-      
-        <br>       
-        <br>       
-        <br>       
+        <h1 class="title is-1 line-title is-spaced">JuggleTime Entertainment</h1>
         <br>
-          
-    <br>       
-    <br>
-    <br>    
-    <h2 class="title is-spaced line-title is-size-3 is-spaced has-text-white-ter">
-    Captivating performances. World-class juggling. Unforgettable moments for every event.
-    </h2>             
-    <br>         
-    <br>         
-    <br>         
-    <br><div class="block">
-        <a href="#contact" class="button is-large is-ghost square">
-          Book Now
-        </a>
-    </div>    
-    <br>
-    <br>     
-    <br>
-    <br>
-    <br>
-    <br>
-
-      <p class="subtitle  is-spaced is-italic is-size-5">
-        Presented by your ringmaster of marvel and whimsy…
-      </p>
-      <h1 class="title is-size-4 has-text-weight-bold">Logan Goethe
-      </h1>            
-    <br>
-        <div class="subtitle">
-      <span class="line-title"></span>
-      <span class="icon has-text-jt-teal-light"><i class="fa fa-star"></i></span>
-      <span class="line-title"></span>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="title is-spaced line-title is-size-3">
+          Captivating performances. World-class juggling. Unforgettable moments for every event.
+        </h2>
+        <br>
+        <br>
+        <br>
+        <div class="block">
+          <a href="#contact" class="button is-large square" id="herobutton">
+            Book Now
+          </a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="subtitle is-spaced is-italic is-size-5 has-text-jt-lightgrey">
+          Presented by your ringmaster of marvel and whimsy…
+        </p>
+        <br>
+        <br>
+        <br>
+        <h1 class="title is-size-3 is-spaced">Logan Goethe
+        </h1>
+        <div class="subtitle animate-lines">
+          <span class="line-starleft"></span>
+          <span class="icon has-text-jt-teal-light"><i class="fa fa-star"></i></span>
+          <span class="line-starright"></span>
+        </div>
       </div>
     </div>
-  </div>
   </section>
 
   <!-- Colorline -->
@@ -108,134 +104,137 @@
   </div>
 
   <!-- Performances -->
-  <section class="section stripes" id="performances">
+  <section class="section stripes outlined-text" id="performances">
     <div class="container has-text-centered">
       <h1 class="title is-spaced is-1">
         Performances
       </h1>
-      <p class="subtitle is-5 is-italic has-text-jt-lightgrey">
-        A versatile showcase tailored for any occasion
-      </p>      
-    <div class="columns">
-      <div class="column is-one-third">
+      <div class="columns">
+        <div class="column is-one-third">
           <figure class="image block">
-            <img class="clickable-image" src="images/gallery3.jpg" data-full="images/gallery3.jpg" data-index="0"alt="Image 1">
+            <img class="clickable-image" src="images/gallery3.jpg" data-full="images/gallery3.jpg" data-index="0"
+              alt="Image 1">
             <figcaption class="figtext">
               <p class="title is-3">Stage</p>
             </figcaption>
           </figure>
-        <div class="block box box-transparency">
+          <div class="box-transparency">
             <p class="subtitle is-6 has-text-white">
-              From cozy cabarets to grand gala stages, Logan’s stage acts bring sharp juggling, theatrical flair, and big energy to every audience.
+              From cozy cabarets to grand gala stages, Logan’s stage acts bring sharp juggling, theatrical flair, and
+              big energy to every audience.
             </p>
           </div>
-      </div>
-      <div class="column is-one-third">
+        </div>
+        <div class="column is-one-third">
           <figure class="block image">
-            <img class="clickable-image" src="images/gallery2.jpg" data-full="images/gallery2.jpg" data-index="1" alt="Image 2">
+            <img class="clickable-image" src="images/gallery2.jpg" data-full="images/gallery2.jpg" data-index="1"
+              alt="Image 2">
             <figcaption class="figtext">
               <p class="title is-3">Ambience</p>
             </figcaption>
           </figure>
-          <div class="block box box-transparency">
+          <div class="box-transparency">
             <p class="subtitle is-6 has-text-white">
-              Roving, interactive entertainment that adds vibrant energy and visual delight to any space. Perfect for galas, parties, and themed environments.
+              Roving, interactive entertainment that adds vibrant energy and visual delight to any space. Perfect for
+              galas, parties, and themed environments.
             </p>
           </div>
-      </div>
-      <div class="column is-one-third">
+        </div>
+        <div class="column is-one-third">
           <figure class="block image">
-            <img class="clickable-image" src="images/gallery1.jpg" data-full="images/gallery1.jpg" data-index="2" alt="Image 3">
+            <img class="clickable-image" src="images/gallery1.jpg" data-full="images/gallery1.jpg" data-index="2"
+              alt="Image 3">
             <figcaption class="figtext">
               <p class="title is-3">Fire</p>
             </figcaption>
           </figure>
-          <div class="block box box-transparency">
+          <div class="box-transparency">
             <p class="subtitle is-6 has-text-white">
-              A veteran of the flames, Logan juggles fire with finesse and coordinates professional fire productions at any scale. Safety, spectacle, and sizzle — guaranteed.
+              Juggletime Entertainment coordinates professional fire productions with veteran fire performers at
+              any scale. Safety, spectacle, and sizzle — guaranteed.
             </p>
           </div>
+        </div>
       </div>
-    </div>
-        <div class="subtitle">
-      <span class="line-title"></span>
-      <span class="icon has-text-jt-teal-light"><i class="fa fa-star"></i></span>
-      <span class="line-title"></span>
+      <div class="subtitle animate-lines">
+        <span class="line-starleft"></span>
+        <span class="icon has-text-jt-teal-light"><i class="fa fa-star"></i></span>
+        <span class="line-starright"></span>
       </div>
     </div>
   </section>
 
-  <!-- Modal for Gallery -->
+  <!-- Modal for iamges -->
   <div class="modal" id="imageModal">
     <div class="modal-background"></div>
     <div class="modal-content has-text-centered">
-      <span class="modal-prev has-text-white" style="font-size: 3rem; position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); cursor: pointer;">&#10094;</span>
-      
+      <span class="modal-prev has-text-white"
+        style="font-size: 3rem; position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); cursor: pointer;">&#10094;</span>
       <img id="modalImage" class="zoom-animate" src="" alt="" style="max-height: 90vh;">
-      
-      <span class="modal-next has-text-white" style="font-size: 3rem; position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); cursor: pointer;">&#10095;</span>
+      <span class="modal-next has-text-white"
+        style="font-size: 3rem; position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); cursor: pointer;">&#10095;</span>
     </div>
     <button class="modal-close is-large" aria-label="close"></button>
   </div>
 
-<!-- Experience   -->
+  <!-- Experience   -->
   <section class="section experienceimg">
     <div class="container has-text-centered experienceimg-body outlined-text">
       <h1 class="title is-1 is-spaced">
         Experience
-      </h1>      
-        <div class="columns">
-          <div class="column">
-            <p class="is-spaced title is-4">
-              <strong>Touring Circus</strong>
-            </p>
-            <p class="subtitle">
-              <strong>- The Wandering Circus -</strong>
-            </p>
-            <p class="subtitle">
-              <strong>- Performers Without Borders -</strong>
-            </p>
-            <p class="subtitle">
-              <strong>- A Passing Fancy -</strong>
-            </p>
-            <p class="subtitle">
-              <strong>- Highly Flammable -</strong>
-            </p>
-            <p class="subtitle">
-              <strong>- Beyond Wings -</strong>
-            </p>
-          </div>
-          <div class="column">
-            <p class="title is-spaced is-4">
-              <strong>Stage Shows</strong>
-            </p>
-            <p class="subtitle">
-              <strong>- European Juggling Convention -</strong>
-            </p>
-            <p class="subtitle">
-              <strong>- All Blacks National Rugby -</strong>
-            </p>          
-            <p class="subtitle">
-              <strong>- Crystalline Entertainment -</strong>
-            </p>
-            <p class="subtitle">
-              <strong>- Electric Forest -</strong>   
-              </p> 
-            <p class="subtitle">
-              <strong>- Mexican Clown Convention -</strong>
-            </p>
-          </div>
-        </div>        
-        <p class="subtitle">And More!!</p>
-        <div class="subtitle">
-      <span class="line-title"></span>
-      <span class="icon has-text-jt-teal-light"><i class="fa fa-star"></i></span>
-      <span class="line-title"></span>
+      </h1>
+      <div class="columns">
+        <div class="column">
+          <p class="is-spaced title is-3 line-title">
+            <strong>Touring Circus</strong>
+          </p>
+          <p class="subtitle">
+            <strong>- The Wandering Circus -</strong>
+          </p>
+          <p class="subtitle">
+            <strong>- Performers Without Borders -</strong>
+          </p>
+          <p class="subtitle">
+            <strong>- A Passing Fancy -</strong>
+          </p>
+          <p class="subtitle">
+            <strong>- Highly Flammable -</strong>
+          </p>
+          <p class="subtitle">
+            <strong>- Beyond Wings -</strong>
+          </p>
+        </div>
+        <div class="column">
+          <p class="title is-spaced is-3 line-title">
+            <strong>Stage Shows</strong>
+          </p>
+          <p class="subtitle">
+            <strong>- European Juggling Convention -</strong>
+          </p>
+          <p class="subtitle">
+            <strong>- All Blacks National Rugby -</strong>
+          </p>
+          <p class="subtitle">
+            <strong>- Crystalline Entertainment -</strong>
+          </p>
+          <p class="subtitle">
+            <strong>- Electric Forest -</strong>
+          </p>
+          <p class="subtitle">
+            <strong>- Mexican Clown Convention -</strong>
+          </p>
+        </div>
       </div>
+      <p class="subtitle">And More!!</p>
+      <div class="subtitle animate-lines">
+        <span class="line-starleft"></span>
+        <span class="icon has-text-jt-teal-light"><i class="fa fa-star"></i></span>
+        <span class="line-starright"></span>
       </div>
+    </div>
   </section>
 
-    <div id="colorline" class="columns is-mobile">
+  <div id="colorline" class="columns is-mobile">
     <div class="column has-background-jt-teal">
     </div>
     <div class="column has-background-jt-teal-light">
@@ -246,122 +245,149 @@
     </div>
   </div>
 
-  <!-- Video -->
+  <!-- Gallery -->
   <section class="section has-background-warning gradient" id="gallery">
     <div class="container has-text-centered">
-        <div class="block video-container" id="video">
-          <h1 class="title is-1 is-spaced">
-            Gallery
-          </h1>
-          <iframe width="70%" height="315" src="https://www.youtube.com/embed/gGuWNaBrAQw" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <h1 class="title is-1 is-spaced">
+          Gallery
+        </h1>
+      <div class="block video-container line-title" id="video">
+        <iframe width="70%" height="315" src="https://www.youtube.com/embed/gGuWNaBrAQw" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
     </div>
-    <br>
-    <div class="subtitle has-text-centered">
-      <span class="line-title"></span>
+
+    <!-- Images -->
+    <div class="container">
+      <div class="columns">
+        <div class="column is-one-third">
+          <div class="box box-transparency">
+            <figure class="image">
+              <img class="clickable-image" src="images/gallery1.jpg" data-full="images/gallery1.jpg" data-index="0"
+                alt="Image 1">
+            </figure>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box box-transparency">
+            <figure class="image">
+              <img class="clickable-image" src="images/gallery2.jpg" data-full="images/gallery2.jpg" data-index="1"
+                alt="Image 2">
+            </figure>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box box-transparency">
+            <figure class="image">
+              <img class="clickable-image" src="images/gallery3.jpg" data-full="images/gallery3.jpg" data-index="2"
+                alt="Image 3">
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-one-third">
+          <div class="box box-transparency">
+            <figure class="image">
+              <img class="clickable-image" src="images/gallery1.jpg" data-full="images/gallery1.jpg" data-index="0"
+                alt="Image 1">
+            </figure>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box box-transparency">
+            <figure class="image">
+              <img class="clickable-image" src="images/gallery2.jpg" data-full="images/gallery2.jpg" data-index="1"
+                alt="Image 2">
+              <figcaption class="figtext">
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box box-transparency">
+            <figure class="image">
+              <img class="clickable-image" src="images/gallery3.jpg" data-full="images/gallery3.jpg" data-index="2"
+                alt="Image 3">
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="subtitle animate-lines has-text-centered">
+        <span class="line-starleft"></span>
+        <span class="icon has-text-jt-teal-light"><i class="fa fa-star"></i></span>
+        <span class="line-starright"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form-->
+  <section class="section stripes outlined-text" id="quote">
+    <div class="container has-text-centered block">
+      <h1 class="title is-1">Request A Quote</h1>
+      <form action="https://formspree.io/f/xpwdnejn" method="POST">
+        <div class="field">
+          <label class="label has-text-left">Name</label>
+          <div class="control has-icons-left">
+            <input name="name" type="text" class="input" placeholder="e.g. Jeff Goldblum">
+            <span class="icon is-small is-left">
+              <i class="fa fa-user"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label has-text-left">Email</label>
+          <div class="control has-icons-left">
+            <input name="email" type="email" class="input" placeholder="e.g. jeffgoldblum@gmail.com">
+            <span class="icon is-small is-left">
+              <i class="fa fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label has-text-left">Message</label>
+          <div class="control">
+            <textarea name="message" class="textarea"
+              placeholder="Request details e.g. event location, date, acts desired etc"></textarea>
+          </div>
+        </div>
+        <div class="control">
+          <button type="submit" class="button is-medium" id="formbutton">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="subtitle animate-lines has-text-centered">
+      <span class="line-starleft"></span>
       <span class="icon has-text-jt-teal-light"><i class="fa fa-star"></i></span>
-      <span class="line-title"></span>
-      </div>
-  <!-- Gallery -->
-  <div class="container">
-  <div class="block has-text-centered">
-    </div>
-    <div class="columns">
-      <div class="column is-one-third">
-        <div class="box box-transparency">
-          <figure class="image">
-            <img class="clickable-image" src="images/gallery1.jpg" data-full="images/gallery1.jpg" data-index="0"alt="Image 1">
-          </figure>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box box-transparency">
-          <figure class="image">
-            <img class="clickable-image" src="images/gallery2.jpg" data-full="images/gallery2.jpg" data-index="1" alt="Image 2">
-          </figure>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box box-transparency">
-          <figure class="image">
-            <img class="clickable-image" src="images/gallery3.jpg" data-full="images/gallery3.jpg" data-index="2" alt="Image 3">
-          </figure>
-        </div>
-      </div>
-    </div>
-    <div class="columns">
-      <div class="column is-one-third">
-        <div class="box box-transparency">
-          <figure class="image">
-            <img class="clickable-image" src="images/gallery1.jpg" data-full="images/gallery1.jpg" data-index="0"alt="Image 1">
-          </figure>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box box-transparency">
-          <figure class="image">
-            <img class="clickable-image" src="images/gallery2.jpg" data-full="images/gallery2.jpg" data-index="1" alt="Image 2">
-            <figcaption class="figtext">
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <div class="box box-transparency">
-          <figure class="image">
-            <img class="clickable-image" src="images/gallery3.jpg" data-full="images/gallery3.jpg" data-index="2" alt="Image 3">
-          </figure>
-        </div>
-      </div>
-    </div>
-    <div class="subtitle has-text-centered">
-      <span class="line-title"></span>
-      <span class="icon has-text-jt-teal-light"><i class="fa fa-star"></i></span>
-      <span class="line-title"></span>
-      </div>
+      <span class="line-starright"></span>
     </div>
   </section>
 
   <!-- Testimonials -->
-  <section class="section testimonialimg is-small">
+  <section class="section testimonialimg is-medium">
     <div class="container has-text-centered outlined-text">
-    <h1 class="title is-1 is-spaced"> <!-- turn this shit up into a modal that scrolls bbbbbbb -->
-      Testimonials
-    </h1>
-    <div class="columns testimonial-body">
-      <div class="column is-10 is-offset-1">
-        <div class="box box-transparency has-text-centered roundedsmall fullshadow">          
-          <p class="subtitle has-text-white">
-            “JuggleTime brought the perfect blend of polish and whimsy to our gala. Logan adapted on the fly, interacted gracefully with VIPs, and elevated the entire atmosphere. Worth every penny.”
-          </p>
-          <p class="subtitle has-text-weight-bold">— Emily Choi, Cirrus Foundation
-          </p>
-        </div> 
-        <div class="box box-transparency has-text-centered roundedsmall fullshadow">          
-          <p class="subtitle has-text-white">
-            “There are performers you hire, and then there are artists you trust with your audience. Logan is the latter. He delivers precision, charisma, and an undeniable spark onstage.”
-          </p>
-          <p class="subtitle has-text-weight-bold">— Juliana Veo, Luminate Arts Festival
-          </p>
-        </div> 
-        <div class="box box-transparency has-text-centered roundedsmall fullshadow">          
-          <p class="subtitle has-text-white">
-            “Logan had the entire block mesmerized. Kids were screaming with laughter, and even the adults were wide-eyed and grinning. I’ve never had so many neighbors thank me for a party before!”
-          </p>
-          <p class="subtitle has-text-weight-bold">— Danielle Rainier, East Brainerd Community Organizer
-          </p>
-        </div> 
+      <h1 class="title is-1 is-spaced overlay-text">
+        Testimonials
+      </h1>
+      <div class="columns testimonial-body">
+        <div class="column is-10 is-offset-1">
+          <div id="testimonial-carousel" class="box box-transparency has-text-centered roundedsmall fullshadow">
+            <p id="testimonialText" class="subtitle has-text-white is-4">
+            </p>
+            <p id="testimonialAuthor" class="subtitle has-text-weight-bold">
+            </p>
+          </div>
+        </div>
       </div>
-    </div>    
-    <div class="subtitle has-text-centered">
-      <span class="line-title"></span>
-      <span class="icon has-text-jt-teal-light"><i class="fa fa-star"></i></span>
-      <span class="line-title"></span>
+      <div class="subtitle animate-lines has-text-centered">
+        <span class="line-starleft"></span>
+        <span class="icon has-text-jt-teal-light"><i class="fa fa-star"></i></span>
+        <span class="line-starright"></span>
       </div>
-      </div>
+    </div>
   </section>
 
-    <div id="colorline" class="columns is-mobile">
+  <div id="colorline" class="columns is-mobile">
     <div class="column has-background-jt-teal">
     </div>
     <div class="column has-background-jt-teal-light">
@@ -372,49 +398,35 @@
     </div>
   </div>
 
-  <!-- Contact Form-->
-  <section class="section stripes" id="contact">
+    <!-- About section-->
+  <section class="section stripes outlined-text" id="about">
     <div class="container has-text-centered block">
-      <h1 class="title is-1 is-spaced">Request A Quote</h1>
-      <form action="https://formspree.io/f/xpwdnejn" method="POST">
-        <div class="field">
-            <label class="label has-text-left">Name</label>
-            <div class="control has-icons-left">
-                <input name="name" type="text" class="input" placeholder="e.g. Jeff Goldblum">
-                <span class="icon is-small is-left">
-                    <i class="fa fa-user"></i>
-                  </span>
-            </div>
-        </div>   
-        <div class="field">
-            <label class="label has-text-left">Email</label>
-            <div class="control has-icons-left">
-                <input name="email" type="email" class="input" placeholder="e.g. jeffgoldblum@gmail.com">
-                <span class="icon is-small is-left">
-                    <i class="fa fa-envelope"></i>
-                  </span>
-            </div>
-        </div>  
-        <div class="field">
-            <label class="label has-text-left">Message</label>
-            <div class="control">
-              <textarea name="message" class="textarea" placeholder="Request details e.g. event location, date, acts desired etc"></textarea>
-            </div>
-          </div>      
-          <div class="control">
-            <button type="submit" class="button is-medium has-text-black has-background-jt-purple-light">Submit</button>
-          </div>
-      </form>
-    </div>
-    <div class="subtitle has-text-centered">
-      <span class="line-title"></span>
-      <span class="icon has-text-jt-teal-light"><i class="fa fa-star"></i></span>
-      <span class="line-title"></span>
+      <h1 class="title line-title is-size-1">About
+      </h1>
+      <p class="subtitle is-5">
+        Welcome to <strong>JuggleTime</strong> — the circus experience that blends expert skill with joyful spectacle.
+        Whether dazzling a festival crowd, lighting up a school assembly, or bringing laughter to a local block party,
+        Logan Goethe delivers performances full of energy, elegance, and flair.
+      </p>
+      <p class="subtitle is-5">
+        Logan Goethe is a seasoned juggler from Chattanooga, TN. His journey into circus arts began over 15 years ago,
+        driven by a relentless passion for creative expression that led to perform on stages all over the world. These
+        days, his artistic path weaves through juggling, partner acrobatics, clowning, physical theater, music, dance,
+        and
+        more as he refines his craft both onstage and in the classroom. Above all, Logan is fiercely dedicated to
+        sharing
+        with everyone the joy of juggling, the power of playfulness, and the welcoming spirit of the circus world.
+      </p>
+      <div class="subtitle animate-lines">
+        <span class="line-starleft"></span>
+        <span class="icon has-text-jt-teal-light"><i class="fa fa-star"></i></span>
+        <span class="line-starright"></span>
       </div>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer id="contact" class="footer paddingsmall gradient">
+  <footer id="contact" class="footer paddingsmall gradient outlined-text">
     <div class="container ">
       <div class="columns">
         <div class="column is-one-third has-text-centered">
@@ -426,67 +438,35 @@
             <li class="icon-content">
               <a href="https://youtube.com/@juggletime" aria-label="Youtube" data-social="youtube">
                 <div class="filled"></div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-youtube"
-                  viewBox="0 0 16 16"
-                  xml:space="preserve"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube"
+                  viewBox="0 0 16 16" xml:space="preserve">
                   <path
                     d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
-                    fill="currentColor"
-                  ></path>
+                    fill="currentColor"></path>
                 </svg>
               </a>
               <div class="tooltip">Youtube</div>
             </li>
             <li class="icon-content">
-              <a
-                href="https://www.instagram.com/juggletime"
-                aria-label="Instagram"
-                data-social="instagram"
-              >
+              <a href="https://www.instagram.com/juggletime" aria-label="Instagram" data-social="instagram">
                 <div class="filled"></div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-instagram"
-                  viewBox="0 0 16 16"
-                  xml:space="preserve"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-instagram" viewBox="0 0 16 16" xml:space="preserve">
                   <path
                     d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
-                    fill="currentColor"
-                  ></path>
+                    fill="currentColor"></path>
                 </svg>
               </a>
               <div class="tooltip">Instagram</div>
             </li>
             <li class="icon-content">
-              <a
-                data-social="facebook"
-                aria-label="Facebook"
-                href="https://www.facebook.com/loganjuggles"
-              >
+              <a data-social="facebook" aria-label="Facebook" href="https://www.facebook.com/loganjuggles">
                 <div class="filled"></div>
-                <svg
-                  xml:space="preserve"
-                  viewBox="0 0 24 24"
-                  class="bi bi-facbook"
-                  fill="currentColor"
-                  height="24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"
-                  ></path>
+                <svg xml:space="preserve" viewBox="0 0 24 24" class="bi bi-facbook" fill="currentColor" height="24"
+                  width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor"
+                    d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z">
+                  </path>
                 </svg>
               </a>
               <div class="tooltip">Facebook</div>
@@ -497,50 +477,49 @@
           <p class="title is-4 is-spaced">Contact info</p>
           <ul>
             <li>
-          <span class="icon-text">
-            <span class="icon">
-              <i class="fa fa-phone"></i>
+              <span class="icon-text">
+                <span class="icon">
+                  <i class="fa fa-phone"></i>
+                </span>
+                <span>&nbsp;| &nbsp; <a href="tel:423-280-6428">+1 (423) 280-6428</a></span> <!--make into a link-->
+              </span>
+            </li>
+            <li>
+              <span class="icon-text">
+                <span class="icon">
+                  <i class="fa fa-envelope"></i>
+                </span>
+                <span>&nbsp;| &nbsp;
+                  <a href="mailto:logoethe@gmail.com">Logoethe@gmail.com</a>
+                </span>
+              </span>
+            </li>
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fa fa-map-pin"></i>
+              </span>
+              <span>&nbsp;| &nbsp; Chattanooga, Tennessee</span>
             </span>
-            <span>&nbsp;| &nbsp; <a href="tel:423-280-6428">+1 (423) 280-6428</a></span> <!--make into a link-->
-          </span>
-        </li>
-          <li>
-          <span class="icon-text">
-            <span class="icon">
-              <i class="fa fa-envelope"></i>
-            </span>
-            <span>&nbsp;| &nbsp; 
-              <a href="mailto:logoethe@gmail.com">Logoethe@gmail.com</a>
-            </span>
-          </span>
-        </li>
-          <span class="icon-text">
-            <span class="icon">
-              <i class="fa fa-map-pin"></i>
-            </span>
-            <span>&nbsp;| &nbsp; Chattanooga, Tennessee</span>
-          </span>
-        </li>
-        </ul>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="container line-long">
-      <div class="columns">
-        <div class="column is-one-third">
-          <a href="#">
-            <img src="images/jt1.png" style="max-width:100px;width:100%" alt="logo">
+        <div class="columns">
+          <div class="column is-one-third">
+            <a href="#">
+              <img src="images/jt1.png" style="max-width:100px;width:100%" alt="logo">
             </a>
+          </div>
+          <div class="column is-one-third">
+            <br>
+            <p class="line-title has-text-centered">
+              &copy; 2025 MySite. All rights reserved.
+            </p>
+          </div>
         </div>
-        <div class="column is-one-third">
-          <br>
-          <p class="line-title has-text-centered">
-            &copy; 2025 MySite. All rights reserved.
-          </p>
-        </div>
-      </div>
       </div>
     </div>
   </footer>
-
 </body>
 </html>
