@@ -23,6 +23,7 @@ add my paypal/venmo
 testimonial modal
 color refinement
 footer responsiveness layout @media queries
+button hover text and border
 
 Accessibility check
 SEO check
