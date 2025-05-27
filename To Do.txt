@@ -3,7 +3,11 @@ Default styles
     fonts
 Text updates
     testimonials
+    hamburger dots
+    move About text to lower section
+    
 correct youtube video link - make highlight vid
+gallery
 new logo - adjust header footer size after
 
 ------------------------

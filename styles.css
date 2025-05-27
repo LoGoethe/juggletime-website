@@ -367,6 +367,17 @@ figure:hover figcaption {
   z-index: 1;
 }
 
+.outlined-text {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
 /* Testimonial */
 .testimonialimg {
   position: relative;
