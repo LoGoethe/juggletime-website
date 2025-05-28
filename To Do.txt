@@ -1,7 +1,6 @@
 MOST IMPORTANT
 logo
 correct youtube video link - make highlight vid
-gallery images
 new logo - adjust header footer size after
 
 ------------------------
@@ -20,6 +19,7 @@ button hover text and border
 fixed top navbar clashing ith line animations
 
 Accessibility check
+ fig captions alt text
 SEO check
 
 Services offered page

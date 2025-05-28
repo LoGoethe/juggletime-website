@@ -84,8 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
   prevBtn.addEventListener("click", showPrev);
   nextBtn.addEventListener("click", showNext);
 
-
-
   // Keyboard nav
   document.addEventListener("keydown", (e) => {
     if (!modal.classList.contains("is-active")) return;
@@ -94,6 +92,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === "ArrowRight") showNext();
   });
 
+
+
+
+  
   // Testiomonials carousel
   document.addEventListener("DOMContentLoaded", () => {
   const testimonialText = document.getElementById("testimonialText");

@@ -335,10 +335,7 @@ a.navbar {
   z-index: 0;
 }
 
-/* gallery images */
-#gallery img {
-    border-radius: 10px;
-}
+/* Performances gallery */
 
 figure {
   position: relative; /* Establish a positioning context */
@@ -379,6 +376,13 @@ figure:hover figcaption {
 .clickable-image:hover {
   filter: brightness(1.1);
 }
+
+/* gallery Images*/
+div.gallery figure {
+  max-height: 12em;
+}
+
+/* Modal */
 
 /* Make modal image bigger */
 #imageModal .modal-content {
