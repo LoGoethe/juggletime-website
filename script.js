@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === "ArrowRight") showNext();
   });
 
+  // Testiomonials carousel
   document.addEventListener("DOMContentLoaded", () => {
   const testimonialText = document.getElementById("testimonialText");
   const testimonialAuthor = document.getElementById("testimonialAuthor");

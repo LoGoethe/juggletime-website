@@ -344,7 +344,7 @@ figure {
   position: relative; /* Establish a positioning context */
   overflow: hidden; /* Ensure content doesn't overflow */
   transition: transform 0.3s ease; /* Smooth transition */
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 figcaption {
@@ -382,6 +382,7 @@ figure:hover figcaption {
 
 /* Make modal image bigger */
 #imageModal .modal-content {
+  position: relative;
   width: 95vw;
   height: 95vh;
   max-width: none;
@@ -393,8 +394,8 @@ figure:hover figcaption {
 }
 
 #imageModal img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 100vw;
+  max-height: 90vh;
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
@@ -403,7 +404,41 @@ figure:hover figcaption {
 /* modal prev and next buttons */
 .modal-prev,
 .modal-next {
-  z-index: 1001; /* So they're on top of the image */
+  z-index: 1001;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .modal-prev,
+  .modal-next {
+    font-size: 1.5rem;
+    top: auto;
+    bottom: 1rem;
+    transform: none;
+  }
+
+  .modal-prev {
+    left: 30%;
+  }
+
+  .modal-next {
+    right: 30%;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1050;
 }
 
 .zoom-animate {
