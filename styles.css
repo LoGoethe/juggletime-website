@@ -86,6 +86,10 @@ body, p, .subtitle {
   color: var(--jt-offwhite);
 }
 
+.hero-title {
+  font-size: clamp(2.8rem, 5vw, 6rem);
+}
+
 /* Hero Book Now button */
 #herobutton {
   letter-spacing: 0.1em;

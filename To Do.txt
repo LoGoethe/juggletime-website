@@ -1,5 +1,5 @@
 MOST IMPORTANT
-    
+logo
 correct youtube video link - make highlight vid
 gallery images
 new logo - adjust header footer size after
@@ -22,5 +22,6 @@ fixed top navbar clashing ith line animations
 Accessibility check
 SEO check
 
+Services offered page
 Burlesque hidden page
 Teaching/private lessons pageee
