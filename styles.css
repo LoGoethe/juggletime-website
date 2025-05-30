@@ -94,12 +94,13 @@ body, p, .subtitle {
 #herobutton {
   letter-spacing: 0.1em;
   border-radius: 0px;
-  transition: color 0.5s ease;  
-  background-color: #ba5d8577;
+  transition: color 0.5s ease, background-color 0.5s ease;  
+  background-color: #ac034c85;
 }
 
 #herobutton:hover {
   color: var(--jt-teal-light);
+  background-color: #a10a4b;
 }
 
 /* Form Button */
@@ -107,11 +108,13 @@ body, p, .subtitle {
   font-family: 'Great Vibes', cursive;
   letter-spacing: 0.1em;  
   background-color: #ba5d85;
-  transition: color 0.5s ease;
+  transition: color 0.5s ease, background-color 0.5s ease;
+  padding-bottom: 5px;
 }
 
 #formbutton:hover {
-  color: var(--jt-teal);
+  color: var(--jt-teal-light);
+  background-color: #df146c;
 }
 
 a.navbar {
@@ -356,9 +359,9 @@ a.navbar {
 figure {
   position: relative; /* Establish a positioning context */
   overflow: hidden; /* Ensure content doesn't overflow */
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 15px;
-  box-shadow: 0px 0px 8px 2px #2c044db4;
+  box-shadow: -2px -2px 8px 2px var(--jt-purple-light);
 }
 
 
@@ -380,7 +383,7 @@ figcaption {
 
 figure:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 8px 2px #65edffb4;
+  box-shadow: 2px 2px 8px 2px #65edffb4;
 }
 
 figure:hover figcaption {
