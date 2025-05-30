@@ -190,6 +190,12 @@ a.navbar {
   opacity: 1;
 }
 
+.line-wrapper {
+  overflow-x: hidden;
+  position: relative; /* Ensure the contained elements are positioned relative to this */
+}
+}
+
 /* Footer Line */
 .line-long::before {
   background: linear-gradient(to right, var(--jt-purple-light), var(--jt-teal-light));
