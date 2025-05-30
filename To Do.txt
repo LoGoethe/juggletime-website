@@ -1,6 +1,6 @@
 MOST IMPORTANT
 make highlight vid - youtube video link
-logo - adjust hnavbar
+logo - adjust navbar
 
 ------------------------
 
