@@ -19,18 +19,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-});         
+});        
+
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById("imageModal");
+  if (!modal) return; // Exit if modal not present
+
 
 //gallery modal
-  const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImage");
   const closeBtn = modal.querySelector(".modal-close");
-  const bg = modal.querySelector(".modal-background");
   const prevBtn = modal.querySelector(".modal-prev");
   const nextBtn = modal.querySelector(".modal-next");
-
+  const prevZone = modal.querySelector(".modal-click-prev");
+  const nextZone = modal.querySelector(".modal-click-next");
   const images = Array.from(document.querySelectorAll(".clickable-image"));
   let currentIndex = 0;
+  
 
   function openModal(index) {
     currentIndex = index;
@@ -63,26 +68,28 @@ document.addEventListener('DOMContentLoaded', () => {
     openModal(currentIndex);
   }
 
-  // close modal when anything outside the iamge is clicked
-  modal.addEventListener('click', (e) => {
-    const isImage = e.target.id === "modalImage";
-    const isArrow = e.target.classList.contains("modal-prev") || e.target.classList.contains("modal-next");
-    const isClose = e.target.classList.contains("modal-close");
-  
-    if (!isImage && !isArrow && !isClose) {
-      closeModal();
-    }
-  });
+    // Attach click handlers for navigation
+  if (prevZone) prevZone.addEventListener("click", (e) => { e.stopPropagation(); showPrev(); });
+  if (nextZone) nextZone.addEventListener("click", (e) => { e.stopPropagation(); showNext(); });
+  if (prevBtn) prevBtn.addEventListener("click", (e) => { e.stopPropagation(); showPrev(); });
+  if (nextBtn) nextBtn.addEventListener("click", (e) => { e.stopPropagation(); showNext(); });
 
-  // Attach click handlers
+    // Attach click handlers to images
   images.forEach((img, index) => {
     img.addEventListener("click", () => openModal(index));
   });
 
-  closeBtn.addEventListener("click", closeModal);
-  bg.addEventListener("click", closeModal);
-  prevBtn.addEventListener("click", showPrev);
-  nextBtn.addEventListener("click", showNext);
+  // close modal when anything outside the iamge is clicked
+  if (closeBtn) closeBtn.addEventListener("click", closeModal);
+  modal.addEventListener('click', (e) => {
+    const isImage = e.target.id === "modalImage";
+    const isArrow = e.target.classList.contains("modal-prev") || e.target.classList.contains("modal-next");
+    const isClose = e.target.classList.contains("modal-close");
+    const isClickZone = e.target.classList.contains("modal-click-prev") || e.target.classList.contains("modal-click-next");
+    if (!isImage && !isArrow && !isClose && !isClickZone) {
+      closeModal();
+    }
+  });
 
   // Keyboard nav
   document.addEventListener("keydown", (e) => {
@@ -91,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === "ArrowLeft") showPrev();
     if (e.key === "ArrowRight") showNext();
   });
-
+});
 
 
 

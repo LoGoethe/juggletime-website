@@ -164,13 +164,15 @@
   <!-- Modal for iamges -->
   <div class="modal" id="imageModal">
     <div class="modal-background"></div>
-    <div class="modal-content has-text-centered">
-      <span class="modal-prev has-text-white"
-        style="font-size: 3rem; position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); cursor: pointer;">&#10094;</span>
-      <img id="modalImage" class="zoom-animate" src="" alt="" style="max-height: 90vh;">
-      <span class="modal-next has-text-white"
-        style="font-size: 3rem; position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); cursor: pointer;">&#10095;</span>
-    </div>
+   <div class="modal-content">
+  <div class="modal-image-wrapper">
+    <div class="modal-click-zone modal-click-prev"></div>
+    <img id="modalImage" class="zoom-animate" src="" alt="">
+    <div class="modal-click-zone modal-click-next"></div>
+  </div>
+  <span class="modal-prev has-text-white">&#10094;</span>
+  <span class="modal-next has-text-white">&#10095;</span>
+</div>
     <button class="modal-close is-large" aria-label="close"></button>
   </div>
 
