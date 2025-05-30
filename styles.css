@@ -86,28 +86,34 @@ body, p, .subtitle {
   color: var(--jt-offwhite);
 }
 
+a.navbar {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  color: var(--jt-teal-light) !important;
+}
+
 .hero-title {
   font-size: clamp(2.8rem, 5vw, 6rem);
 }
 
-/* Hero Book Now button */
+/* Hero and Form Buttons */
 #herobutton {
+  font-weight: bold;
   letter-spacing: 0.1em;
-  border-radius: 0px;
   transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.3s ease;  
   background-color: #4ceee6ce;
-  color: #000;
+  color: var(--jt-purple);
   box-shadow: 2px -2px 6px 1px var(--jt-purple-light);
   border-radius: 5px;
 }
 
 #herobutton:hover {
-  color: black);
+  color: black;
   background-color: var(--jt-teal-light);
   box-shadow: -1px 1px 6px 1px #65edffb4;
 }
 
-/* Form Button */
 #formbutton {
   font-family: 'Great Vibes', cursive;
   letter-spacing: 0.1em;  
@@ -124,14 +130,7 @@ body, p, .subtitle {
   
 }
 
-a.navbar {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 100;
-  letter-spacing: 0.2em;
-  color: var(--jt-teal-light) !important;
-}
-
-/* boxes behind text transparency */
+/* Text Box styling */
 .box-transparency {
   background-color: #4000361f;
   backdrop-filter: blur(2px);
@@ -149,7 +148,7 @@ a.navbar {
   box-shadow: 0 0 10px 0 rgba(116, 255, 232, 0.377);
 }
 
-/* Heading underlines */
+/* Heading underline */
 .line-title::after {
   content: "";
   display: block;
@@ -167,6 +166,29 @@ a.navbar {
   width: 120px;
   margin: 15px auto 20px;
   position: relative;
+}
+
+/* Footer Line */
+.line-long::before {
+  background: linear-gradient(to right, var(--jt-purple-light), var(--jt-teal-light));
+  display: block;
+  content: "";
+  height: 1px;
+  margin: 15px auto 20px;
+  position: relative;
+}
+
+/* Section Colorline */
+#colorline {
+  height: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+#colorline .column {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Star Line animation*/
@@ -193,7 +215,6 @@ a.navbar {
 }
 
 /* Animation Trigger State  */
-
 .animate-in .line-starleft,
 .animate-in .line-starright {
   transform: translateX(0);
@@ -205,54 +226,44 @@ a.navbar {
   position: relative; /* Ensure the contained elements are positioned relative to this */
 }
 
-/* Footer Line */
-.line-long::before {
-  background: linear-gradient(to right, var(--jt-purple-light), var(--jt-teal-light));
-  display: block;
-  content: "";
-  height: 1px;
-  margin: 15px auto 20px;
-  position: relative;
-}
-
-/* colorline between sections */
-#colorline {
-  height: 10px;
-  margin: 0;
-  padding: 0;
-}
-
-#colorline .column {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 /* Nav Bar*/
-.customnav {
-  background-color: #40003693;
- backdrop-filter: blur(2px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.726);
-}
-
-.navbar-menu .is-active {
-  background-color: #c46fb793; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.726);
+.navbar.customnav {
+  background-color: #400036cb;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 5px 10px rgba(61, 255, 213, 0.103);
 }
 
 .navbar-menu {
-  background-color: #40003693; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.726);
-  align-items: right;
-  width: 20rem;
+  display: block;
+  background-color: #400036cb;
+  backdrop-filter: blur(2px);
+  position:absolute;
+  right: 0;
+  width: 33vh;
+  max-width: 400px;
+  text-align: center;  
+  box-shadow: 0 5px 10px rgba(61, 255, 213, 0.103);
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px) translateX(10px);
+  transition: all 0.4s ease;
+  z-index: 999;
+
 }
 
-.logo-container {
-  height: 50px; /* optional, if you want tight fit */
+.navbar-menu.is-active {
+max-height: 300px;
+opacity: 1;
+transform: translateY(0) translateX(0px);
 }
 
 /* Force navbar brand and item containers to match height */
-.navbar .navbar-item img.navbar-logo {
+.logo-container {
+  height: 50px; 
+}
+
+img.navbar-logo {
   max-height: 50px;
 }
 
@@ -289,17 +300,9 @@ a.navbar {
   color: var(--jt-teal-lighter); /* different color when open */
 }
 
- /* dots */
 .nav-dot {
   margin: 0 0.5rem;
   color: var(--jt-purple-light); /* Or whatever color suits */
-}
-
-/* Hide the dots on mobile */
-@media screen and (max-width: 1023px) {
-  .nav-dot {
-    display: none;
-  }
 }
 
 /* Hero background */
@@ -326,7 +329,7 @@ a.navbar {
   z-index: 1;
 }
 
-/*gradient background*/
+/* Gradient Background*/
 .gradient {
   background-image: linear-gradient(
     310deg,
@@ -347,7 +350,7 @@ a.navbar {
   );
 }
 
-/* background stripes */
+/* Stripes Background */
 .stripes {
   width: 100%;
   height: 100%;
@@ -384,7 +387,6 @@ a.navbar {
 }
 
 /* Performances gallery */
-
 figure {
   position: relative; /* Establish a positioning context */
   overflow: hidden; /* Ensure content doesn't overflow */
@@ -435,7 +437,6 @@ div.gallery figure img {
 }
 
 /* Modal */
-
 /* Make modal image bigger */
 #imageModal .modal-content {
   position: relative;
@@ -563,10 +564,6 @@ div.gallery figure img {
 }
 
 /* Footer social icons*/
-ul {
-  list-style: none;
-}
-
 .example-2 {
   display: flex;
   justify-content: center;
