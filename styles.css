@@ -230,12 +230,25 @@ a.navbar {
 
 /* Nav Bar*/
 .customnav {
-  background-color: #4000369f;
+  background-color: #40003693;
+ backdrop-filter: blur(2px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.726);
+}
+
+.navbar-menu .is-active {
+  background-color: #c46fb793; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.726);
+}
+
+.navbar-menu {
+  background-color: #40003693; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.726);
+  align-items: right;
+  width: 20rem;
 }
 
 .logo-container {
   height: 50px; /* optional, if you want tight fit */
-  
 }
 
 /* Force navbar brand and item containers to match height */
@@ -251,10 +264,17 @@ a.navbar {
 
 .nav-links a:hover {
   color: var(--jt-purple-light);
+  background-color: #27002144;
+
 }
 
 .navbar-burger {
   color: var(--jt-purple-light);
+}
+
+.navbar-burger:hover {
+  color: var(--jt-teal-lighter);
+  background-color: inherit;
 }
 
 .navbar-burger:hover span {
@@ -263,6 +283,10 @@ a.navbar {
 
 .navbar-burger.is-active span {
   color: var(--jt-purple-light); /* different color when open */
+}
+
+.navbar-burger.is-active:hover span {
+  color: var(--jt-teal-lighter); /* different color when open */
 }
 
  /* dots */
