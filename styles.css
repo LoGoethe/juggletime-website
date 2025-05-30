@@ -356,9 +356,11 @@ a.navbar {
 figure {
   position: relative; /* Establish a positioning context */
   overflow: hidden; /* Ensure content doesn't overflow */
-  transition: transform 0.3s ease; /* Smooth transition */
+  transition: transform 0.3s ease;
   border-radius: 15px;
+  box-shadow: 0px 0px 8px 2px #2c044db4;
 }
+
 
 figcaption {
   position: absolute;
@@ -377,7 +379,8 @@ figcaption {
 }
 
 figure:hover {
-  transform: scale(1.05); /* Zoom effect on hover */
+  transform: scale(1.05);
+  box-shadow: 0px 0px 8px 2px #65edffb4;
 }
 
 figure:hover figcaption {
@@ -395,8 +398,8 @@ figure:hover figcaption {
 
 /* gallery Images*/
 div.gallery figure {
-  max-height: 12em;
-}
+  max-height: 9em;
+  
 
 /* Modal */
 
