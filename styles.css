@@ -213,11 +213,21 @@ a.navbar {
   padding: 0;
 }
 
-/* navbar */
-.customnav {
-  background: hsla(0, 0%, 0%, 0.712);
-  backdrop-filter: blur(2px);
-  border: none;
+/* Set fixed navbar height */
+.customnav .navbar-item {
+  height: 50px;
+  padding: 0.5rem 1.5rem; /* optional, if you want tight fit */
+}
+
+/* Force navbar brand and item containers to match height */
+.navbar .navbar-item img.navbar-logo {
+  height: 100%;
+  max-height: none;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-links a {

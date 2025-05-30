@@ -1,7 +1,6 @@
 MOST IMPORTANT
-logo
-correct youtube video link - make highlight vid
-new logo - adjust header footer size after
+make highlight vid - youtube video link
+logo - adjust hnavbar
 
 ------------------------
 
@@ -17,6 +16,7 @@ color+font refinement
 footer responsiveness layout @media queries
 button hover text and border
 fixed top navbar clashing ith line animations
+footer responsiveness
 
 Accessibility check
  fig captions alt text
