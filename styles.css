@@ -107,14 +107,14 @@ body, p, .subtitle {
 #formbutton {
   font-family: 'Great Vibes', cursive;
   letter-spacing: 0.1em;  
-  background-color: #ba5d85;
+  background-color: #ac034c85;
   transition: color 0.5s ease, background-color 0.5s ease;
   padding-bottom: 5px;
 }
 
 #formbutton:hover {
   color: var(--jt-teal-light);
-  background-color: #df146c;
+  background-color: #a10a4b;
 }
 
 a.navbar {
@@ -196,7 +196,6 @@ a.navbar {
 .line-wrapper {
   overflow-x: hidden;
   position: relative; /* Ensure the contained elements are positioned relative to this */
-}
 }
 
 /* Footer Line */
@@ -402,7 +401,7 @@ figure:hover figcaption {
 /* gallery Images*/
 div.gallery figure {
   max-height: 9em;
-  
+}
 
 /* Modal */
 
