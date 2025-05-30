@@ -405,8 +405,9 @@ figure:hover figcaption {
 }
 
 /* gallery Images*/
-div.gallery figure {
-  max-height: 9em;
+div.gallery figure img {
+  max-height: 12em;
+  object-fit:cover;
 }
 
 /* Modal */
