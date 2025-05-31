@@ -75,9 +75,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (nextBtn) nextBtn.addEventListener("click", (e) => { e.stopPropagation(); showNext(); });
 
     // Attach click handlers to images
-  images.forEach((img, index) => {
-    img.addEventListener("click", () => openModal(index));
+ images.forEach((img, index) => {
+  img.addEventListener("click", (e) => {
+    e.preventDefault();      // Prevent default anchor or browser action
+    e.stopPropagation();     // Prevent bubbling to parent elements
+    openModal(index);
   });
+});
 
   // close modal when anything outside the iamge is clicked
   if (closeBtn) closeBtn.addEventListener("click", closeModal);
