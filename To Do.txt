@@ -1,10 +1,16 @@
 MOST IMPORTANT
-
+email setup
+gig salad
+email sig
+contact form to correct email
 ------------------------
 
+optimize images 
+optimize all loading times
 animations
     carousel - slide switch
 add my paypal/venmo
+CDN
 
 footer responsiveness layout @media queries
 color+font refinement
@@ -16,4 +22,4 @@ SEO check
 
 Services offered page
 Burlesque hidden page
-Teaching/private lessons pageee
+Teaching/private lessons pagee

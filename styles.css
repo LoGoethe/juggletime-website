@@ -234,7 +234,26 @@ a.navbar {
 }
 
 .navbar-menu {
-  display: block;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px) translateX(10px);
+  transition: all 0.4s ease;
+  z-index: 999;
+
+}
+
+@media (min-width: 1024px) {
+  .navbar-menu {
+    max-height: none;
+    opacity: 1;
+    transform: none;
+    background: none;
+    box-shadow: none;
+    width: auto;
+  }
+}
+
+.navbar-menu.is-active {
   background-color: #400036cb;
   backdrop-filter: blur(2px);
   position:absolute;
@@ -244,15 +263,6 @@ a.navbar {
   text-align: center;  
   box-shadow: 0 5px 10px rgba(61, 255, 213, 0.103);
   overflow: hidden;
-  max-height: 0;
-  opacity: 0;
-  transform: translateY(-10px) translateX(10px);
-  transition: all 0.4s ease;
-  z-index: 999;
-
-}
-
-.navbar-menu.is-active {
 max-height: 300px;
 opacity: 1;
 transform: translateY(0) translateX(0px);
