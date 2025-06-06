@@ -132,11 +132,11 @@ a.navbar {
 
 /* Text Box styling */
 .box-transparency {
-  background-color: #4000361f;
-  backdrop-filter: blur(2px);
+  background-color: #40003649;
+  backdrop-filter: blur(0.8px);
   margin: 0 auto;
   padding: 7px;
-  width: 80%;
+  width: 85%;
   border-radius: 20px;
 }
 
@@ -275,7 +275,8 @@ img.navbar-logo {
 
 .nav-links a:hover {
   color: var(--jt-purple-light);
-  background-color: #27002144;
+  background-color: #40003600;
+  border-radius:  10px;
 
 }
 
@@ -517,7 +518,6 @@ div.gallery figure img {
   object-fit: contain;
 }
 
-
 .modal {
   position: fixed;
   top: 0;
@@ -578,7 +578,7 @@ div.gallery figure img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.35);
   z-index: 0;
 }
 

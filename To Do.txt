@@ -1,20 +1,15 @@
 MOST IMPORTANT
-make highlight vid - youtube video link
-logo - adjust navbar
 
 ------------------------
 
 animations
-    carousel - slide switch, larger arrow change radius, larger hover text on images?
+    carousel - slide switch
 add my paypal/venmo
 
-
 footer responsiveness layout @media queries
-button hover text and border
-fixed top navbar clashing ith line animations
-footer responsiveness
 color+font refinement
 
+About section profile pic column
 Accessibility check
  fig captions alt text
 SEO check
