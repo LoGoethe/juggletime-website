@@ -1,10 +1,9 @@
 MOST IMPORTANT
-email setup
 gig salad
-email sig
-contact form to correct email
+
 ------------------------
 
+fix animation lines non-scrollable
 optimize images 
 optimize all loading times
 animations
@@ -23,3 +22,7 @@ SEO check
 Services offered page
 Burlesque hidden page
 Teaching/private lessons pagee
+
+
+NOTES
+I use formspree NOT mailjet
