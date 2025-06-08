@@ -226,6 +226,14 @@ a.navbar {
   position: relative; /* Ensure the contained elements are positioned relative to this */
 }
 
+/* Make star lines and icons ignore pointer/touch events */
+.line-starleft,
+.line-starright,
+.line-wrapper,
+.line-wrapper .icon {
+  pointer-events: none;
+}
+
 /* Nav Bar*/
 .navbar.customnav {
   background-color: #400036cb;
@@ -271,6 +279,10 @@ transform: translateY(0) translateX(0px);
 /* Force navbar brand and item containers to match height */
 .logo-container {
   height: 50px; 
+}
+
+.logo-container:hover {
+  background-color: transparent;
 }
 
 img.navbar-logo {
