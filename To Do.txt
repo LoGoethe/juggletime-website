@@ -1,15 +1,13 @@
 MOST IMPORTANT
-gig salad
 
 ------------------------
-
-fix animation lines non-scrollable
 optimize images 
 optimize all loading times
 animations
     carousel - slide switch
 add my paypal/venmo
 CDN
+insights dashboard
 
 footer responsiveness layout @media queries
 color+font refinement
@@ -21,8 +19,9 @@ SEO check
 
 Services offered page
 Burlesque hidden page
-Teaching/private lessons pagee
+Teaching/private lessons page
 
 
 NOTES
-I use formspree NOT mailjet
+formspree NOT mailjet
+Hostinger mail and domain registering
