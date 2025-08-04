@@ -1,7 +1,6 @@
 MOST IMPORTANT
 
 ------------------------
-optimize images 
 optimize all loading times
 animations
     carousel - slide switch
@@ -14,7 +13,6 @@ color+font refinement
 
 About section profile pic column
 Accessibility check
- fig captions alt text
 SEO check
 
 Services offered page
