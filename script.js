@@ -173,3 +173,18 @@ document.addEventListener("DOMContentLoaded", () => {
   observers.forEach((el) => observer.observe(el));
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const videos = document.querySelectorAll(".youtube-container");
+
+  videos.forEach(video => {
+    video.addEventListener("click", function () {
+      const iframe = document.createElement("iframe");
+      iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.id + "?autoplay=1");
+      iframe.setAttribute("frameborder", "0");
+      iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+      iframe.setAttribute("allowfullscreen", "1");
+      this.innerHTML = "";
+      this.appendChild(iframe);
+    });
+  });
+});
