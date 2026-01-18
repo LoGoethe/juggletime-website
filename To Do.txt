@@ -1,5 +1,8 @@
 MOST IMPORTANT
 
+Create invoice template
+Create proposal template
+
 ------------------------
 optimize font/script loading times
 animations
