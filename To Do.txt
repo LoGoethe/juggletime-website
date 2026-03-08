@@ -1,5 +1,6 @@
 MOST IMPORTANT
 
+CHange website descipriont in index file
 Create invoice template
 Create proposal template
 
@@ -18,11 +19,38 @@ About section profile pic column
 Accessibility check
 SEO check
 
-Services offered page
+Services offered page - idiot proof
 Burlesque hidden page
 Teaching/private lessons page
 
 
 NOTES
 formspree NOT mailjet
-Hostinger mail and domain registering
+Hostinger mail and domain registering (log in with google sso)
+ expires around june 2027
+
+
+ Matt SEO notes
+
+ About section its own page
+ Contact own page
+ Schema - more schema - services, knows about, review schema, same as schema, area served morrrrre
+
+ services offered - ease my sales process, ease the friction of someone reaching out
+
+ After:
+ AI blog posts with a few gig pics, talk about locations, heres what we did
+ schema is wrapped up in all my blog posts
+
+ After 4 blog posts:
+ look at local news to get featured - let them know ill make an article about that as well and link back to their site (more backlink trades)
+ Magazines, local anything, circus publications, local events whatever (backlinks)
+
+
+
+generally
+get in front of loca search traffic existing
+demand generation - create demand for service
+getting in front of local performers but its not immediately obvious
+how i handle my gig salad account - Eilysha consult
+last 5 or ten seconds of highlight rell - interview while getting off stage "im out of breath but we had such a great show out there" demonstrate gratitude and joy! wrapper of gratitude that shows how great we are to work with
