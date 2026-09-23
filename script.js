@@ -156,11 +156,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-
-
-
-
   // Line animations
 document.addEventListener("DOMContentLoaded", () => {
   const animatedLines = document.querySelectorAll(".animate-lines");
@@ -182,6 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// Video container for youtube
 document.addEventListener("DOMContentLoaded", function () {
   const videos = document.querySelectorAll(".youtube-container");
 
