@@ -19,18 +19,14 @@ About section profile pic column
 Accessibility check
 SEO check
 
+PAGES
+Implement SCSS and VUE?
 Services offered page - idiot proof
 Burlesque hidden page
 Teaching/private lessons page
 
 
-NOTES
-formspree NOT mailjet
-Hostinger mail and domain registering (log in with google sso)
- expires around june 2027
-
-
- Matt SEO notes
+Matt SEO notes
 
  About section its own page
  Contact own page

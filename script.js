@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = el.dataset.target;
       const $target = document.getElementById(target);
 
+      if (!menu) return;
+
       // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
       el.classList.toggle('is-active');
       $target.classList.toggle('is-active');
@@ -112,42 +114,47 @@ document.addEventListener('DOMContentLoaded', () => {
   const testimonialText = document.getElementById("testimonialText");
   const testimonialAuthor = document.getElementById("testimonialAuthor");
 
-  const testimonials = [
-    {
-      text: "“JuggleTime brought the perfect blend of polish and whimsy to our gala. Logan adapted on the fly, interacted gracefully with VIPs, and elevated the entire atmosphere. Worth every penny.”",
-      author: "— Emily Choi, Cirrus Foundation"
-    },
-    {
-      text: "“There are performers you hire, and then there are artists you trust with your audience. Logan is the latter. He delivers precision, charisma, and an undeniable spark onstage.”",
-      author: "— Juliana Veo, Luminate Arts Festival"
-    },
-    {
-      text: "“Logan had the entire block mesmerized. Kids were screaming with laughter, and even the adults were wide-eyed and grinning. I’ve never had so many neighbors thank me for a party before!”",
-      author: "— Danielle Rainier, East Brainerd Community Organizer"
+
+  if (testimonialText && testimonialAuthor) {
+
+    const testimonials = [
+      {
+        text: "“JuggleTime brought the perfect blend of polish and whimsy to our gala. Logan adapted on the fly, interacted gracefully with VIPs, and elevated the entire atmosphere. Worth every penny.”",
+        author: "— Emily Choi, Cirrus Foundation"
+      },
+      {
+        text: "“There are performers you hire, and then there are artists you trust with your audience. Logan is the latter. He delivers precision, charisma, and an undeniable spark onstage.”",
+        author: "— Juliana Veo, Luminate Arts Festival"
+      },
+      {
+        text: "“Logan had the entire block mesmerized. Kids were screaming with laughter, and even the adults were wide-eyed and grinning. I’ve never had so many neighbors thank me for a party before!”",
+        author: "— Danielle Rainier, East Brainerd Community Organizer"
+      }
+    ];
+
+    let current = 0;
+
+    function showTestimonial(index) {
+      testimonialText.style.opacity = 0;
+      testimonialAuthor.style.opacity = 0;
+
+      setTimeout(() => {
+        testimonialText.textContent = testimonials[index].text;
+        testimonialAuthor.textContent = testimonials[index].author;
+
+        testimonialText.style.opacity = 1;
+        testimonialAuthor.style.opacity = 1;
+      }, 300);
     }
-  ];
 
-  let current = 0;
-
-  function showTestimonial(index) {
-    testimonialText.style.opacity = 0;
-    testimonialAuthor.style.opacity = 0;
-
-    setTimeout(() => {
-      testimonialText.textContent = testimonials[index].text;
-      testimonialAuthor.textContent = testimonials[index].author;
-
-      testimonialText.style.opacity = 1;
-      testimonialAuthor.style.opacity = 1;
-    }, 300);
-  }
-
-  showTestimonial(current);
-  setInterval(() => {
-    current = (current + 1) % testimonials.length;
     showTestimonial(current);
-  }, 7000);
+    setInterval(() => {
+      current = (current + 1) % testimonials.length;
+      showTestimonial(current);
+    }, 7000);
+  }
 });
+
 
 
 
@@ -156,21 +163,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Line animations
 document.addEventListener("DOMContentLoaded", () => {
-  const observers = document.querySelectorAll(".animate-lines");
+  const animatedLines = document.querySelectorAll(".animate-lines");
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate-in");
-          observer.unobserve(entry.target); // Animate once
-        }
-      });
-    },
-    { threshold: 0.5 }
-  );
+  if (animatedLines.length > 0) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+            observer.unobserve(entry.target); // Animate once
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
 
-  observers.forEach((el) => observer.observe(el));
+    animatedLines.forEach((el) => observer.observe(el));
+  }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
