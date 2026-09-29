@@ -17,17 +17,98 @@ document.addEventListener('DOMContentLoaded', () => {
       // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
       el.classList.toggle('is-active');
       $target.classList.toggle('is-active');
+      el.setAttribute("aria-expanded", el.classList.contains("is-active"));
 
     });
   });
-});        
+});     
 
+
+
+// Service Section Gallery 
+document.addEventListener('DOMContentLoaded', () => {
+  const galleries = document.querySelectorAll('.service-gallery') 
+    
+  galleries.forEach(gallery => {
+
+    const mainImage = gallery.querySelector('.gallery-main');
+    const thumbnails = gallery.querySelectorAll('.gallery-thumbnail');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener("click", () => {
+        mainImage.src = thumbnail.src;
+        mainImage.alt = thumbnail.alt;
+        mainImage.setAttribute("data-index", thumbnail.getAttribute("data-index"));
+
+      });
+    });
+  });  
+});
+
+
+// Service section gallery arrows
+document.addEventListener("DOMContentLoaded", () => {
+  const galleries = document.querySelectorAll(".service-gallery");
+
+  galleries.forEach((gallery) => {
+    const mainImage = gallery.querySelector(".gallery-main");
+    const thumbnails = gallery.querySelectorAll(".gallery-thumbnail");
+    const leftArrow = gallery.querySelector(".gallery-prev");
+    const leftSide = gallery.querySelector(".gallery-click-prev");
+    const rightArrow = gallery.querySelector(".gallery-next");
+    const rightSide = gallery.querySelector(".gallery-click-next");
+    let currentIndex = 0;
+
+    leftArrow.addEventListener("click", () => {
+      currentIndex = parseInt(mainImage.getAttribute("data-index"));
+      if (currentIndex > 0) {
+        currentIndex = currentIndex - 1;
+        mainImage.setAttribute("data-index", currentIndex);
+        const thumbnail = thumbnails[currentIndex];
+        mainImage.src = thumbnail.src;
+        mainImage.alt = thumbnail.alt;
+      };        
+    });
+    leftSide.addEventListener("click", () => {
+      currentIndex = parseInt(mainImage.getAttribute("data-index"));
+      if (currentIndex > 0) {
+        currentIndex = currentIndex - 1;   
+        mainImage.setAttribute("data-index", currentIndex);
+        const thumbnail = thumbnails[currentIndex];
+        mainImage.src = thumbnail.src;
+        mainImage.alt = thumbnail.alt;
+      };     
+    });
+    rightArrow.addEventListener("click", () => {
+      currentIndex = parseInt(mainImage.getAttribute("data-index"));
+      if (currentIndex < thumbnails.length - 1) {
+        currentIndex = currentIndex + 1;
+        mainImage.setAttribute("data-index", currentIndex);
+        const thumbnail = thumbnails[currentIndex];
+        mainImage.src = thumbnail.src;
+        mainImage.alt = thumbnail.alt;
+      }                  
+    });
+    rightSide.addEventListener("click", () => {
+      currentIndex = parseInt(mainImage.getAttribute("data-index"));
+      if (currentIndex < thumbnails.length - 1) {
+        currentIndex = currentIndex + 1;
+        mainImage.setAttribute("data-index", currentIndex);
+        const thumbnail = thumbnails[currentIndex];
+        mainImage.src = thumbnail.src;
+        mainImage.alt = thumbnail.alt;
+      }        
+    });
+  });
+});
+
+
+
+// Home gallery modal
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById("imageModal");
   if (!modal) return; // Exit if modal not present
 
-
-//gallery modal
   const modalImg = document.getElementById("modalImage");
   const closeBtn = modal.querySelector(".modal-close");
   const prevBtn = modal.querySelector(".modal-prev");
@@ -108,8 +189,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   
-  // Testiomonials carousel
-  document.addEventListener("DOMContentLoaded", () => {
+// Testiomonials carousel
+document.addEventListener("DOMContentLoaded", () => {
   const testimonialText = document.getElementById("testimonialText");
   const testimonialAuthor = document.getElementById("testimonialAuthor");
 
@@ -151,11 +232,11 @@ document.addEventListener('DOMContentLoaded', () => {
       current = (current + 1) % testimonials.length;
       showTestimonial(current);
     }, 7000);
-  }
+  };
 });
 
 
-  // Line animations
+// Line animations
 document.addEventListener("DOMContentLoaded", () => {
   const animatedLines = document.querySelectorAll(".animate-lines");
 

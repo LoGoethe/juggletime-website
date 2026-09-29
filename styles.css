@@ -80,7 +80,7 @@ h1 {
   border-radius: 80px;
 }
 
-body, p, .subtitle {
+body, p, h2, .subtitle {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   color: var(--jt-offwhite);
@@ -104,7 +104,7 @@ a.navbar {
   transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.3s ease;  
   background-color: #4ceee6ce;
   color: var(--jt-purple);
-  box-shadow: 2px -2px 6px 1px var(--jt-purple-light);
+  box-shadow: 1px -1px 6px 2px var(--jt-purple-light);
   border-radius: 5px;
 }
 
@@ -120,13 +120,13 @@ a.navbar {
   background-color: #ac034cab;
   transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.3s ease;
   padding-bottom: 5px;
-  box-shadow: 2px -2px 6px 1px var(--jt-purple-light);
+  box-shadow: 1px -1px 6px 2px var(--jt-purple-light);
 }
 
 #formbutton:hover {
   color: var(--jt-teal-light);
   background-color: #a10a4b;
-  box-shadow: -2px 2px 6px 1px #65edffb4;
+  box-shadow: -1px 1px 6px 2px #65edffb4;
   
 }
 
@@ -459,12 +459,19 @@ img.navbar-logo {
   opacity: 1;
 }
 
-figure {
+/* Service page mobile display */
+@media (max-width: 768px) {
+  .serviceThumbnail {
+    display: none;
+  }
+}
+
+.gallery figure {
   position: relative; /* Establish a positioning context */
   overflow: hidden; /* Ensure content doesn't overflow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 15px;
-  box-shadow: -2px -2px 8px 2px var(--jt-purple-light);
+  box-shadow: -1px -1px 8px 3px var(--jt-purple-light);
 }
 
 
@@ -484,9 +491,9 @@ figcaption {
   border-radius: 10px; /* Match the border-radius of the image */
 }
 
-figure:hover {
+.gallery figure:hover {
   transform: scale(1.05);
-  box-shadow: 2px 2px 8px 2px #65edffb4;
+  box-shadow: 1px 1px 8px 3px #65edffb4;
 }
 
 figure:hover figcaption {
@@ -494,18 +501,19 @@ figure:hover figcaption {
   transform: scale(1.05); /* Scale the caption along with the figure */
 }
 
-.clickable-image {
+.clickable-image, .gallery-thumbnail {
   cursor: pointer;
 }
 
-.clickable-image:hover {
+.clickable-image:hover, .gallery-thumbnail:hover {
   filter: brightness(1.1);
 }
 
 /* gallery Images*/
 div.gallery figure img {
-  max-height: 12em;
-  object-fit:cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Modal */
@@ -532,10 +540,13 @@ div.gallery figure img {
 
 /* modal prev and next buttons */
 .modal-prev,
-.modal-next {
+.modal-next, 
+.gallery-prev,
+.gallery-next {
   font-size: 5rem;
   position: absolute;
   top: 50%;
+  opacity: 0.6;
   transform: translateY(-50%);
   cursor: pointer;
   padding: 0.5rem;
@@ -543,30 +554,37 @@ div.gallery figure img {
   color: white; /* since you're using has-text-white in Bulma */
 }
 
-.modal-prev {
+.modal-prev,
+.gallery-prev {
   left: 1rem; 
 }
 
-.modal-next {
+.modal-next,
+.gallery-next {
   right: 1rem; 
 }
 
 @media (max-width: 768px) {
   .modal-prev,
-  .modal-next {
+  .modal-next,
+  .gallery-prev,
+  .gallery-next {
     font-size: 3rem;
   }
 
-  .modal-prev {
+  .modal-prev,
+  .gallery-prev {
     left: 5%;
   }
 
-  .modal-next {
+  .modal-next,
+  .gallery-next {
     right: 5%;
   }
 }
 
-.modal-click-zone {
+.modal-click-zone,
+.gallery-click-zone {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -575,11 +593,13 @@ div.gallery figure img {
   cursor: pointer; /* Just behind the arrows */
 }
 
-.modal-click-prev {
+.modal-click-prev,
+.gallery-click-prev {
   left: 0;
 }
 
-.modal-click-next {
+.modal-click-next,
+.gallery-click-next {
   right: 0;
 }
 
@@ -755,4 +775,163 @@ div.gallery figure img {
 /* Footer*/
 footer.paddingsmall {
   padding-bottom: 4px;
+}
+
+
+
+/* Service section decorative corner lines */
+
+.service-section {
+  position: relative;
+  padding: 3rem;
+}
+
+.service-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Shared corner styling */
+.service-section::before,
+.service-section::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 70px;
+  pointer-events: none;
+}
+
+/* Top-left corner */
+.service-section::before {
+  top: 1.5rem;
+  left: 1.5rem;
+
+  border-top: 2px solid var(--jt-teal-light);
+  border-left: 2px solid var(--jt-purple-light);
+
+  /* Gradient-like color transition */
+  border-image: linear-gradient(
+    10deg,
+    var(--jt-teal-light),
+    var(--jt-purple-light)
+  ) 1;
+}
+
+/* Bottom-right corner */
+.service-section::after {
+  bottom: 1.5rem;
+  right: 1.5rem;
+
+  border-bottom: 2px solid var(--jt-teal-light);
+  border-right: 2px solid var(--jt-purple-light);
+
+  border-image: linear-gradient(
+    80deg,
+    var(--jt-teal-light),
+    var(--jt-purple-light)
+  ) 1;
+}
+
+/* Smaller corners on phones */
+@media (max-width: 768px) {
+  .service-section {
+    padding: 2.5rem 1.75rem;
+  }
+
+  .service-section::before,
+  .service-section::after {
+    width: 45px;
+    height: 45px;
+  }
+
+  .service-section::before {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .service-section::after {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+/* service section 2 opposite corners */
+/* Service section 2 decorative corner lines */
+
+.service-section2 {
+  position: relative;
+  padding: 3rem;
+}
+
+.service-section2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Shared corner styling */
+.service-section2::before,
+.service-section2::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  pointer-events: none;
+}
+
+/* Top-left corner */
+.service-section2::before {
+  top: 1.5rem;
+  right: 1.5rem;
+
+  border-top: 1px solid var(--jt-teal-light);
+  border-right: 1px solid var(--jt-purple-light);
+  opacity: 0.7;
+
+  /* Gradient-like color transition */
+  border-image: linear-gradient(
+    120deg,
+    var(--jt-teal-light),
+    var(--jt-purple-light)
+  ) 1;
+}
+
+/* Bottom-right corner */
+.service-section2::after {
+  bottom: 1.5rem;
+  left: 1.5rem;
+
+  border-bottom: 1px solid var(--jt-teal-light);
+  border-left: 1px solid var(--jt-purple-light);
+  opacity: 0.7;
+
+  border-image: linear-gradient(
+    150deg,
+    var(--jt-teal-light),
+    var(--jt-purple-light)
+  ) 1;
+}
+
+/* Smaller corners on phones */
+@media (max-width: 768px) {
+  .service-section2 {
+    padding: 2.5rem 1.75rem;
+  }
+
+  .service-section2::before,
+  .service-section2::after {
+    width: 45px;
+    height: 45px;
+  }
+
+  .service-section2::before {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .service-section2::after {
+    bottom: 1rem;
+    left: 1rem;
+  }
 }

@@ -5,6 +5,8 @@ Create invoice template
 Create proposal template
 
 ------------------------
+ad mobile navbar close on tap outside of navbar dropdown js
+mikes service page zig zag down the page outer box lines
 optimize font/script loading times
 animations
     carousel - slide switch
@@ -50,3 +52,48 @@ demand generation - create demand for service
 getting in front of local performers but its not immediately obvious
 how i handle my gig salad account - Eilysha consult
 last 5 or ten seconds of highlight rell - interview while getting off stage "im out of breath but we had such a great show out there" demonstrate gratitude and joy! wrapper of gratitude that shows how great we are to work with
+
+
+
+Service Page
+
+JuggleTime Entertainment
+[short intro]
+
+FEATURED SERVICES
+
+Juggling
+[photo]
+Description
+Available as stage / ambient / partner juggling
+
+Fire Performance
+[photo]
+Description
+Fire juggling / fire shows / ensemble productions
+
+Partner Acrobatics
+[photo]
+Description
+
+Roaming Entertainment
+[photo]
+Description
+Stilt characters / roaming juggling / interactive characters
+
+Workshops
+[photo]
+Description
+
+MC / Event Hosting
+[photo]
+Description
+
+CUSTOM PACKAGES
+Tell us about your event...
+[Request a Quote button]
+
+TECHNICAL REQUIREMENTS
+short, useful summary
+
+Footer
