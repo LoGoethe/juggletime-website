@@ -7,6 +7,7 @@ Create proposal template
 ------------------------
 ad mobile navbar close on tap outside of navbar dropdown js
 mikes service page zig zag down the page outer box lines
+new request a quote section and set it so that book now buttons send it to slightly lower oln the screen
 optimize font/script loading times
 animations
     carousel - slide switch

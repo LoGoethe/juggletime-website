@@ -222,7 +222,7 @@ a.navbar {
 }
 
 .line-wrapper {
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative; /* Ensure the contained elements are positioned relative to this */
 }
 
