@@ -5,27 +5,31 @@ Create invoice template
 Create proposal template
 
 ------------------------
-ad mobile navbar close on tap outside of navbar dropdown js
+
+CUSTOM PACKAGES
+Tell us about your event...
+[Request a Quote button]
+
+TECHNICAL REQUIREMENTS
+short, useful summary
+
+make about and experience section seperate page - profile pic column
+booking and contact section mashup, seperate section for services page?
+hide arrows on service gallery when at end of carousel
 mikes service page zig zag down the page outer box lines
-make the clickable nav service section more obviously clickable
-new request a quote section and set it so that book now buttons send it to slightly lower oln the screen
 optimize font/script loading times
 animations
     carousel - slide switch
 add my paypal/venmo
 CDN
 insights dashboard
-
 footer responsiveness layout @media queries
 color+font refinement
-
-About section profile pic column
 Accessibility check
 SEO check
 
 PAGES
 Implement SCSS and VUE?
-Services offered page - idiot proof
 Burlesque hidden page
 Teaching/private lessons page
 
@@ -78,12 +82,12 @@ Partner Acrobatics
 [photo]
 Description
 
-Roaming Entertainment
+Stilts and Characters
 [photo]
 Description
 Stilt characters / roaming juggling / interactive characters
 
-Workshops
+Workshops and Kids Shows
 [photo]
 Description
 

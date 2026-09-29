@@ -108,8 +108,8 @@ a.navbar {
 
 /* Hero and Form Buttons */
 #herobutton {
-  font-weight: bold;
-  letter-spacing: 0.1em;
+  font-weight: 500;
+  letter-spacing: 0.05em;
   transition:
     color 0.5s ease,
     background-color 0.5s ease,
@@ -117,7 +117,7 @@ a.navbar {
   background-color: #4ceee6ce;
   color: var(--jt-purple);
   box-shadow: 1px -1px 6px 2px var(--jt-purple-light);
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 #herobutton:hover {
@@ -1009,7 +1009,8 @@ footer.paddingsmall {
 
 @media screen and (max-width: 768px) {
   .service-gallery,
-  .service-nav-links {
+  .service-nav-links,
+  .service-page-link {
     display: flex;
     flex-direction: column;
   }
@@ -1029,7 +1030,8 @@ footer.paddingsmall {
   opacity: 0.90;
 }
 
-.service-nav-links {
+.service-nav-links,
+.service-page-link {
   display: flex;
   justify-content: center;
   align-items: center;
