@@ -1,5 +1,7 @@
 MOST IMPORTANT
- use ai to fix stadium image to fill seats
+gallery services arros showing over navbar
+click home in navbar from services page glitchy, not working when hovering over gallery images
+blur background of services arco stadium photo
 different image for Hero image
 CHange website descipriont in index file
 Create invoice template

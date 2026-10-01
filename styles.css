@@ -731,7 +731,7 @@ div.gallery figure img {
 /* Testimonial background */
 .testimonialimg {
   position: relative;
-  background: url(images/testimonial-acrobatic-halftime-show.webp) center
+  background: url("images/New folder/MC-stripes.jpg") center
     no-repeat;
   background-attachment: fixed;
   background-size: cover;
