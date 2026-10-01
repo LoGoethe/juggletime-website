@@ -1,10 +1,13 @@
 MOST IMPORTANT
-
+ use ai to fix stadium image to fill seats
+different image for Hero image
 CHange website descipriont in index file
 Create invoice template
 Create proposal template
 
 ------------------------
+
+update sitemap, other random bs
 
 CUSTOM PACKAGES
 Tell us about your event...

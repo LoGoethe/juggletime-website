@@ -82,7 +82,6 @@ h1 {
   margin-bottom: 0.5em;
   color: var(--jt-teal-light) !important;
   text-shadow: 3px 3px 3px rgb(0, 29, 22);
-  backdrop-filter: blur(1px);
   border-radius: 80px;
 }
 
@@ -103,7 +102,13 @@ a.navbar {
 }
 
 .hero-title {
-  font-size: clamp(2.8rem, 5vw, 6rem);
+  font-size: clamp(3.3rem, 5vw, 8rem);
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 5rem;
+  }
 }
 
 /* Hero and Form Buttons */
@@ -369,9 +374,9 @@ img.navbar-logo {
 
 /* Hero background */
 .hero {
-  padding-top: 6rem;
+  padding-top: 8rem;
   position: relative;
-  background: url(images/hero-logan-juggling-clubs.webp) 20% / cover;
+  background: url(images/hero-logan-juggling-clubs.webp) center 50px / cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -384,6 +389,13 @@ img.navbar-logo {
   height: 100%;
   background: rgba(0, 0, 0, 0.35);
   z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-bottom: 0rem;
+    padding-top: 0.5rem;
+  }
 }
 
 .hero-body {
@@ -1027,7 +1039,7 @@ footer.paddingsmall {
   margin-bottom: 0.75rem;
   font-size: 1.2rem;
   letter-spacing: 0.25em;
-  opacity: 0.90;
+  opacity: 0.9;
 }
 
 .service-nav-links,
@@ -1041,7 +1053,7 @@ footer.paddingsmall {
 }
 
 /* underline as background bc after/before are already used for stars on hover */
-.service-nav-links a {  
+.service-nav-links a {
   font-size: large;
   color: var(--jt-teal-lighter);
   text-decoration: none;
