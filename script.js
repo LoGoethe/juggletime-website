@@ -231,6 +231,14 @@ document.addEventListener("DOMContentLoaded", () => {
         author: "— Emily Choi, Cirrus Foundation",
       },
       {
+        text: "“You were truly a magical, enchanting, and vital part of the whole day for us!”",
+        author: "— Kristiana Mallo, Bewitched Bazaar",
+      },
+      {
+        text: "“Great meeting you, Logan. Thanks for your fantiastic work!”",
+        author: "— Lynzi Archibald, Gigsalad - Private Cocktail Party",
+      },
+      {
         text: "“There are performers you hire, and then there are artists you trust with your audience. Logan is the latter. He delivers precision, charisma, and an undeniable spark onstage.”",
         author: "— Juliana Veo, Luminate Arts Festival",
       },
@@ -295,6 +303,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "src",
         "https://www.youtube.com/embed/" + this.dataset.id + "?autoplay=1",
       );
+      iframe.setAttribute("referrerPolicy", "strict-origin-when-cross-origin");
       iframe.setAttribute("frameborder", "0");
       iframe.setAttribute(
         "allow",
