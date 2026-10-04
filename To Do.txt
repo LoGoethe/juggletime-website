@@ -1,15 +1,26 @@
 MOST IMPORTANT
+home background images behave weird on mobile while scrolling
+Link to EPK page or document?
 gallery services arros showing over navbar
+optimize font/script loading times
 click home in navbar from services page glitchy, not working when hovering over gallery images
+hide arrows on service gallery when at end of carousel
 blur background of services arco stadium photo
-different image for Hero image
-CHange website descipriont in index file
-Create invoice template
-Create proposal template
+footer responsiveness layout @media queries
+CHange website desciprion in index file
+Teaching/private lessons page
+ About section its own page - profile pic column?
+ Contact own page
+ Burlesque hidden page
+color+font refinement
+Accessibility check
+SEO check
+add my paypal/venmo
+update sitemap, other random bs
 
 ------------------------
 
-update sitemap, other random bs
+
 
 CUSTOM PACKAGES
 Tell us about your event...
@@ -18,25 +29,18 @@ Tell us about your event...
 TECHNICAL REQUIREMENTS
 short, useful summary
 
-make about and experience section seperate page - profile pic column
-booking and contact section mashup, seperate section for services page?
-hide arrows on service gallery when at end of carousel
+booking and contact section mashup
 mikes service page zig zag down the page outer box lines
-optimize font/script loading times
 animations
     carousel - slide switch
-add my paypal/venmo
+
 CDN
 insights dashboard
-footer responsiveness layout @media queries
-color+font refinement
-Accessibility check
-SEO check
 
-PAGES
+LATER
 Implement SCSS and VUE?
-Burlesque hidden page
-Teaching/private lessons page
+Create invoice template
+Create proposal template
 
 
 Matt SEO notes

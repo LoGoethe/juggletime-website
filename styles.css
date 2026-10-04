@@ -376,7 +376,7 @@ img.navbar-logo {
 .hero {
   padding-top: 8rem;
   position: relative;
-  background: url(images/hero-logan-juggling-clubs.webp) center 50px / cover no-repeat;
+  background: url(images/home/hero-logan-juggling-clubs.webp) center 50px / cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -467,13 +467,15 @@ img.navbar-logo {
 .youtube-container {
   position: relative;
   width: 100%;
-  max-width: 640px;
+  max-width: 790px;
   aspect-ratio: 16 / 9;
   margin: auto;
-  overflow: hidden;
   cursor: pointer;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .youtube-container img {
@@ -481,7 +483,14 @@ img.navbar-logo {
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 12px;
+  border-radius: 15px;
+  box-shadow: -1px -1px 8px 3px var(--jt-purple-light);
+}
+
+.youtube-container:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 8px 3px #65edffb4;
+  filter: brightness(1.1);
 }
 
 .youtube-container iframe {
@@ -491,7 +500,7 @@ img.navbar-logo {
   width: 100%;
   height: 100%;
   border: none;
-  border-radius: 12px;
+  border-radius: 15px;
 }
 
 .play-button {
@@ -510,6 +519,7 @@ img.navbar-logo {
 
 .youtube-container:hover .play-button {
   opacity: 1;
+  filter: brightness(1.1);
 }
 
 /* Service page mobile display */
@@ -546,7 +556,7 @@ figcaption {
     0,
     0.2
   ); /* Optional: Add a background for better readability */
-  opacity: 1; /* Start hidden */
+  opacity: 1; /* Start shown */
   transition:
     opacity 0.3s ease,
     transform 0.3s ease; /* Smooth transition */
@@ -560,7 +570,7 @@ figcaption {
 }
 
 figure:hover figcaption {
-  opacity: 0; /* Show caption on hover */
+  opacity: 0; /* hide caption on hover */
   transform: scale(1.05); /* Scale the caption along with the figure */
 }
 
@@ -704,10 +714,17 @@ div.gallery figure img {
   opacity: 1;
 }
 
+/* Experience section */
+@media (min-width: 768px) {
+  #experienceStars {
+    display: none;
+  }
+}
+
 /* Experience background */
 .experienceimg {
   position: relative;
-  background: url(images/experience-fire-sword.webp) center no-repeat;
+  background: url(images/home/experience-fire-sword.webp) center no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -731,7 +748,7 @@ div.gallery figure img {
 /* Testimonial background */
 .testimonialimg {
   position: relative;
-  background: url("images/New folder/MC-stripes.jpg") center
+  background: url("images/home/testimonial-MC-stripes.webp") center
     no-repeat;
   background-attachment: fixed;
   background-size: cover;
