@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     thumbnails.forEach((thumbnail) => {
       thumbnail.addEventListener("click", () => {
-        mainImage.src = thumbnail.src;
+        mainImage.src = thumbnail.dataset.fullSrc;
         mainImage.alt = thumbnail.alt;
         mainImage.setAttribute(
           "data-index",
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentIndex = currentIndex - 1;
         mainImage.setAttribute("data-index", currentIndex);
         const thumbnail = thumbnails[currentIndex];
-        mainImage.src = thumbnail.src;
+        mainImage.src = thumbnail.dataset.fullSrc;
         mainImage.alt = thumbnail.alt;
       }
     });
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentIndex = currentIndex - 1;
         mainImage.setAttribute("data-index", currentIndex);
         const thumbnail = thumbnails[currentIndex];
-        mainImage.src = thumbnail.src;
+        mainImage.src = thumbnail.dataset.fullSrc;
         mainImage.alt = thumbnail.alt;
       }
     });
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentIndex = currentIndex + 1;
         mainImage.setAttribute("data-index", currentIndex);
         const thumbnail = thumbnails[currentIndex];
-        mainImage.src = thumbnail.src;
+        mainImage.src = thumbnail.dataset.fullSrc;
         mainImage.alt = thumbnail.alt;
       }
     });
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentIndex = currentIndex + 1;
         mainImage.setAttribute("data-index", currentIndex);
         const thumbnail = thumbnails[currentIndex];
-        mainImage.src = thumbnail.src;
+        mainImage.src = thumbnail.dataset.fullSrc;
         mainImage.alt = thumbnail.alt;
       }
     });
