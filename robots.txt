@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://juggletimeentertainment.com/sitemap.xml
+
+Sitemap: https://www.juggletimeentertainment.com/sitemap.xml
