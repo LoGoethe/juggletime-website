@@ -1,4 +1,6 @@
 MOST IMPORTANT
+change services page canonical .html
+sqoosh logos, services images?
 home background images behave weird on mobile while scrolling
 Link to EPK page or document?
 gallery services arros showing over navbar
