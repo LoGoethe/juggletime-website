@@ -1,4 +1,5 @@
 MOST IMPORTANT
+services page - book now button for each section prefills out form with request
 change services page canonical .html
 sqoosh logos, services images?
 home background images behave weird on mobile while scrolling
