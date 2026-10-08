@@ -68,6 +68,13 @@ html {
 }
 
 /* Fonts and text decor - FONT SELECTORS HAVE TO BE ELEMENT SPECIFIC AT LEAST TO OVERRIDE BULMA */
+
+body {
+  font-family: "Poppins", sans-serif;  
+  color: var(--jt-offwhite);
+  font-weight: 400;
+}
+
 .outlined-text {
   text-shadow:
     -0.6px -0.6px 0 rgb(0, 63, 44),
@@ -79,19 +86,31 @@ html {
 h1 {
   font-family: "Great Vibes", cursive;
   letter-spacing: 7px;
-  margin-bottom: 0.5em;
   color: var(--jt-teal-light) !important;
   text-shadow: 3px 3px 3px rgb(0, 29, 22);
   border-radius: 80px;
 }
 
-body,
-p,
-h2,
-.subtitle {
+h2 {
+  font-family: "Great Vibes", cursive;
+  color: var(--jt-teal-light) !important;  
+  text-shadow: 3px 3px 3px rgb(0, 29, 22);
+  font-weight: 600;
+  letter-spacing: 7px;
+}
+
+h3 {
+  text-shadow: 2px 2px 2px rgb(0, 29, 22);
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  color: var(--jt-offwhite);
+  color: var(--jt-offwhite) !important;
+  line-height: 1.125;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: var(--jt-offwhite) !important;
 }
 
 a.navbar {
@@ -218,6 +237,12 @@ a.navbar {
   padding: 0;
 }
 
+/* Triple teal stars */
+.triple-stars {
+  color: var(--jt-teal-light) !important;
+  text-shadow: 2px 2px 2px rgb(0, 29, 22);
+}
+
 /* Star Line animation*/
 .line-starleft,
 .line-starright {
@@ -259,6 +284,7 @@ a.navbar {
 }
 
 .line-wrapper {
+  text-shadow: 2px 2px 2px rgb(0, 29, 22);
   overflow: hidden;
   position: relative; /* Ensure the contained elements are positioned relative to this */
 }
@@ -1054,9 +1080,8 @@ footer.paddingsmall {
 .service-nav-prompt {
   margin-top: 2rem;
   margin-bottom: 0.75rem;
-  font-size: 1.2rem;
-  letter-spacing: 0.25em;
-  opacity: 0.9;
+  font-size: 1.4rem;
+  letter-spacing: 0.22em;
 }
 
 .service-nav-links,

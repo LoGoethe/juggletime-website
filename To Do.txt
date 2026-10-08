@@ -1,6 +1,7 @@
 MOST IMPORTANT
+gray text on some phones??
+adjust mobile image size for both pages according to page speed insights - ask chatgpt
 services page - book now button for each section prefills out form with request
-change services page canonical .html
 sqoosh logos, services images?
 home background images behave weird on mobile while scrolling
 Link to EPK page or document?
@@ -14,13 +15,17 @@ Teaching/private lessons page
  About section its own page - profile pic column?
  Contact own page
  Burlesque hidden page
+ booking and contact section mashup? AI ideas
 color+font refinement
-Accessibility check
-SEO check
 add my paypal/venmo
-update sitemap, other random bs
 
 ------------------------
+
+After changes:
+update sitemap, other random bs
+Accessibility check
+SEO check
+URL inspection/Indexing - google analytics stuff
 
 
 
@@ -31,7 +36,6 @@ Tell us about your event...
 TECHNICAL REQUIREMENTS
 short, useful summary
 
-booking and contact section mashup
 mikes service page zig zag down the page outer box lines
 animations
     carousel - slide switch
