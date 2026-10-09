@@ -1,4 +1,5 @@
 MOST IMPORTANT
+new schema
 gray text on some phones??
 adjust mobile image size for both pages according to page speed insights - ask chatgpt
 services page - book now button for each section prefills out form with request
@@ -9,8 +10,6 @@ gallery services arros showing over navbar
 optimize font/script loading times
 click home in navbar from services page glitchy, not working when hovering over gallery images
 hide arrows on service gallery when at end of carousel
-footer responsiveness layout @media queries
-CHange website desciprion in index file
 Teaching/private lessons page
  About section its own page - profile pic column?
  Contact own page

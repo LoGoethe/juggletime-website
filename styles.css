@@ -27,10 +27,10 @@ html {
   color: var(--jt-teal-lighter) !important;
 }
 .has-text-jt-purple {
-  background-color: var(--jt-purple) !important;
+  color: var(--jt-purple) !important;
 }
 .has-text-jt-purple-light {
-  background-color: var(--jt-purple-light) !important;
+  color: var(--jt-purple-light) !important;
 }
 .has-text-jt-gold {
   color: var(--jt-gold) !important;
@@ -61,7 +61,7 @@ html {
   background-color: var(--jt-purple-light) !important;
 }
 .has-background-jt-gold {
-  color: var(--jt-gold) !important;
+  background-color: var(--jt-gold) !important;
 }
 .has-background-jt-fire {
   background-color: var(--jt-fire) !important;
@@ -71,7 +71,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;  
-  color: var(--jt-offwhite);
+  color: var(--jt-offwhite) !important;
   font-weight: 400;
 }
 
@@ -83,8 +83,9 @@ body {
     0.6px 0.6px 0 rgb(0, 63, 44);
 }
 
-h1 {
+h1.title {
   font-family: "Great Vibes", cursive;
+  font-weight: 600;
   letter-spacing: 7px;
   color: var(--jt-teal-light) !important;
   text-shadow: 3px 3px 3px rgb(0, 29, 22);
@@ -107,17 +108,19 @@ h3 {
   margin-bottom: 0.5em;
 }
 
+strong,
+b {
+  color: inherit !important;
+}
+
 p {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: var(--jt-offwhite) !important;
 }
 
-a.navbar {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  letter-spacing: 0.2em;
-  color: var(--jt-teal-light) !important;
+.label {
+  color: var(--jt-offwhite) !important;
 }
 
 .hero-title {
@@ -154,6 +157,8 @@ a.navbar {
   font-family: "Great Vibes", cursive;
   letter-spacing: 0.1em;
   background-color: #ac034cab;
+  color: var(--jt-offwhite);
+  font-weight: 600;
   transition:
     color 0.5s ease,
     background-color 0.5s ease,
@@ -352,6 +357,9 @@ img.navbar-logo {
 }
 
 .nav-links a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.15em;
   color: var(--jt-teal-lighter);
   text-decoration: none;
   background-image: linear-gradient(var(--jt-gold), var(--jt-gold));
@@ -797,9 +805,67 @@ div.gallery figure img {
 }
 
 /* Testimonial Carousel */
+#testimonial-carousel {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 56rem;
+  min-width: 0;
+  min-height: 14rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonial-body .column {
+  min-width: 0;
+}
+
 #testimonialText,
 #testimonialAuthor {
+  overflow-wrap: anywhere;
   transition: opacity 0.4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  #testimonial-carousel {
+    min-height: 18rem;
+  }
+}
+
+/* Keep footer contact details readable at narrow widths. */
+.footer-contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.footer-contact-item {
+  display: grid;
+  grid-template-columns: 1.25rem minmax(0, 1fr);
+  align-items: start;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-contact-icon {
+  text-align: center;
+  padding-top: 0.15em;
+}
+
+.footer-contact-item > :last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.footer-contact-list a {
+  color: var(--jt-teal-lighter);
+}
+
+.footer-contact-list a:hover,
+.footer-contact-list a:focus-visible {
+  color: var(--jt-gold);
 }
 
 /* Footer social icons*/
