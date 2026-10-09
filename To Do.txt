@@ -1,6 +1,5 @@
 MOST IMPORTANT
 new schema
-gray text on some phones??
 adjust mobile image size for both pages according to page speed insights - ask chatgpt
 services page - book now button for each section prefills out form with request
 sqoosh logos, services images?

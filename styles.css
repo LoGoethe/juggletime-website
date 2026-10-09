@@ -69,9 +69,23 @@ html {
 
 /* Fonts and text decor - FONT SELECTORS HAVE TO BE ELEMENT SPECIFIC AT LEAST TO OVERRIDE BULMA */
 
+/* Map Bulma's variables to the JT palette so Bulma components inherit our colors without !important */
+:root {
+  --bulma-body-color: var(--jt-offwhite);
+  --bulma-text: var(--jt-offwhite);
+  --bulma-text-strong: var(--jt-offwhite);
+  --bulma-label-color: var(--jt-offwhite);
+  --bulma-subtitle-color: var(--jt-offwhite);
+  --bulma-subtitle-strong-color: inherit;
+  --bulma-title-color: var(--jt-teal-light);
+  --bulma-title-strong-color: inherit;
+  --bulma-content-heading-color: var(--jt-teal-light);
+  --bulma-content-strong-color: inherit;
+}
+
 body {
-  font-family: "Poppins", sans-serif;  
-  color: var(--jt-offwhite) !important;
+  font-family: "Poppins", sans-serif;
+  color: var(--jt-offwhite);
   font-weight: 400;
 }
 
@@ -87,14 +101,14 @@ h1.title {
   font-family: "Great Vibes", cursive;
   font-weight: 600;
   letter-spacing: 7px;
-  color: var(--jt-teal-light) !important;
+  color: var(--jt-teal-light);
   text-shadow: 3px 3px 3px rgb(0, 29, 22);
   border-radius: 80px;
 }
 
 h2 {
   font-family: "Great Vibes", cursive;
-  color: var(--jt-teal-light) !important;  
+  color: var(--jt-teal-light);
   text-shadow: 3px 3px 3px rgb(0, 29, 22);
   font-weight: 600;
   letter-spacing: 7px;
@@ -103,24 +117,24 @@ h2 {
 h3 {
   text-shadow: 2px 2px 2px rgb(0, 29, 22);
   font-family: "Poppins", sans-serif;
-  color: var(--jt-offwhite) !important;
+  color: var(--jt-offwhite);
   line-height: 1.125;
   margin-bottom: 0.5em;
 }
 
 strong,
 b {
-  color: inherit !important;
+  color: inherit;
 }
 
 p {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  color: var(--jt-offwhite) !important;
+  color: var(--jt-offwhite);
 }
 
 .label {
-  color: var(--jt-offwhite) !important;
+  color: var(--jt-offwhite);
 }
 
 .hero-title {
@@ -410,8 +424,20 @@ img.navbar-logo {
 .hero {
   padding-top: 8rem;
   position: relative;
-  background: url(images/home/hero-logan-juggling-clubs.webp) center 50px / cover no-repeat;
-  background-attachment: fixed;
+  isolation: isolate;
+  clip-path: inset(0);
+}
+
+/* Fixed (parallax) hero image; clip-path on .hero keeps it inside the section */
+.hero-bg {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center top;
+  z-index: -1;
 }
 
 .hero::before {
@@ -1147,7 +1173,7 @@ footer.paddingsmall {
   margin-top: 2rem;
   margin-bottom: 0.75rem;
   font-size: 1.4rem;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.2em;
 }
 
 .service-nav-links,

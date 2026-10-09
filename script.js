@@ -250,6 +250,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let current = 0;
 
+    const card = document.getElementById("testimonial-carousel");
+    function lockCardHeight() {
+      if (!card) return;
+      const originalText = testimonialText.textContent;
+      const originalAuthor = testimonialAuthor.textContent;
+      card.style.minHeight = "0px";
+      let tallest = 0;
+      testimonials.forEach((t) => {
+        testimonialText.textContent = t.text;
+        testimonialAuthor.textContent = t.author;
+        tallest = Math.max(tallest, card.offsetHeight);
+      });
+      testimonialText.textContent = originalText;
+      testimonialAuthor.textContent = originalAuthor;
+      card.style.minHeight = tallest + "px";
+    }
+    lockCardHeight();
+    window.addEventListener("resize", lockCardHeight);
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(lockCardHeight);
+    }
+
     function showTestimonial(index) {
       testimonialText.style.opacity = 0;
       testimonialAuthor.style.opacity = 0;

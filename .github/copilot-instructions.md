@@ -16,6 +16,11 @@
 - Keep shared visual styling in `styles.css`; it defines the site's color variables and custom classes alongside Bulma's utility classes.
 - The booking form is submitted directly to Formspree from the HTML; there is no application server or API layer in this repository.
 
+## Working Style
+
+- Keep verification proportionate to the change: one lightweight check before and one after, capped at about 1.5 minutes. No exhaustive or repeated test runs without asking first.
+- Do not poll long-running commands repeatedly or print large outputs; write results to a file and report only a short summary.
+
 ## Build, Test, and Lint
 
 - There is no `package.json`, build script, test runner, or lint configuration, so this repository has no project-defined build, test, lint, or single-test command.
