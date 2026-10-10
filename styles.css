@@ -447,7 +447,7 @@ img.navbar-logo {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.16);
   z-index: 0;
 }
 
@@ -782,14 +782,25 @@ div.gallery figure img {
 }
 
 /* Experience background */
-.experienceimg {
+
+.experience {
   position: relative;
-  background: url(images/home/experience-fire-sword.webp) center no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  isolation: isolate;
+  clip-path: inset(0);
 }
 
-.experienceimg::before {
+.experience-bg {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center top;
+  z-index: -1;
+}
+
+.experience::before {
   content: "";
   position: absolute;
   top: 0;
@@ -806,22 +817,31 @@ div.gallery figure img {
 }
 
 /* Testimonial background */
-.testimonialimg {
+.testimonial {
   position: relative;
-  background: url("images/home/testimonial-MC-stripes.webp") center
-    no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  isolation: isolate;
+  clip-path: inset(0);
 }
 
-.testimonialimg::before {
+.testimonial-bg {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center top;
+  z-index: -1;
+}
+
+.testimonial::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 0;
 }
 

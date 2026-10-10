@@ -1,9 +1,11 @@
 MOST IMPORTANT
 new schema
+add strong tags for keywords?
+make thumbnails for home page gallery - script edits
+change hero to include location, services - do SEO for headers correctly
 adjust mobile image size for both pages according to page speed insights - ask chatgpt
 services page - book now button for each section prefills out form with request
 sqoosh logos, services images?
-home background images behave weird on mobile while scrolling
 Link to EPK page or document?
 gallery services arros showing over navbar
 optimize font/script loading times
@@ -62,6 +64,10 @@ Matt SEO notes
  After 4 blog posts:
  look at local news to get featured - let them know ill make an article about that as well and link back to their site (more backlink trades)
  Magazines, local anything, circus publications, local events whatever (backlinks)
+ visitchattanooga.com
+ chattanoogapulse.com
+ eventective.com
+ noogafinder.com
 
 
 
@@ -70,7 +76,7 @@ get in front of loca search traffic existing
 demand generation - create demand for service
 getting in front of local performers but its not immediately obvious
 how i handle my gig salad account - Eilysha consult
-last 5 or ten seconds of highlight rell - interview while getting off stage "im out of breath but we had such a great show out there" demonstrate gratitude and joy! wrapper of gratitude that shows how great we are to work with
+last 5 or ten seconds of highlight rel - interview while getting off stage "im out of breath but we had such a great show out there" demonstrate gratitude and joy! wrapper of gratitude that shows how great we are to work with
 
 
 
