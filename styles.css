@@ -331,15 +331,12 @@ p {
 /* Nav Bar*/
 .navbar.customnav {
   background-color: #400036cb;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
   box-shadow: 0 5px 10px rgba(61, 255, 213, 0.103);
 }
 
 .navbar-menu {
-  max-height: 0;
   opacity: 0;
-  transform: translateY(-10px) translateX(10px);
-  transition: all 0.4s ease;
   z-index: 999;
 }
 
@@ -354,19 +351,30 @@ p {
   }
 }
 
-.navbar-menu.is-active {
-  background-color: #400036cb;
-  backdrop-filter: blur(2px);
-  position: absolute;
-  right: 0;
-  width: 33vh;
-  max-width: 400px;
-  text-align: center;
-  box-shadow: 0 5px 10px rgba(61, 255, 213, 0.103);
-  overflow: hidden;
-  max-height: 300px;
-  opacity: 1;
-  transform: translateY(0) translateX(0px);
+@media (max-width: 1023px) {
+  .navbar-menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 33vh;
+    max-width: 400px;
+    text-align: center;
+    background-color: #683260f5;
+    box-shadow: 0 5px 10px rgba(61, 255, 213, 0.103);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px) translateX(10px);
+    transition:
+      opacity 0.4s ease,
+      transform 0.4s ease,
+      visibility 0.4s;
+  }
+
+  .navbar-menu.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
 }
 
 /* Force navbar brand and item containers to match height */
@@ -396,6 +404,16 @@ img.navbar-logo {
     color 0.5s ease,
     transform 0.4s ease,
     background-size 0.4s ease;
+}
+
+.nav-links a[aria-current="page"] {
+  background-color: #3ce1f736;
+  border-radius: 10px;
+}
+
+.nav-links a[aria-current="page"]:hover {
+  background-color: #3ce1f736;
+  border-radius: 10px;
 }
 
 .nav-links a:hover {
