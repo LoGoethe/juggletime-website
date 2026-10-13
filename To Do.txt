@@ -1,4 +1,3 @@
-MOST IMPORTANT
 SEO
 new schema
 add strong tags for keywords?
@@ -10,14 +9,16 @@ make thumbnails for home page gallery - script edits
 optimize font/script loading times
 PAGES
 Teaching/private lessons page
- About section its own page - profile pic column? Link to EPK page or document? donate support paypal / venmo
- booking and contact section mashup? AI ideas - services page book now buttons for each section prefills out form with request
-    gigsalad link on contact page below my form, chrystal website link (recommended entertainment section)
+ About section its own page - profile pic column? Link to EPK page or document?
+ booking - 
+    services page book now buttons for each section prefills out form with request
+    chrystal website link (recommended entertainment section)
+    logos to contact page of business ive worked with - aubrey page, chrystal, river city, spain national team, novahan, etc
  Burlesque hidden page
 STYLE
-navbar buttons always up, highlighted for current page
 color+font refinement
 
+Tip paypall venmo in my thankyou/review request followup?
 
 ------------------------
 

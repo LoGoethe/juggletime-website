@@ -367,3 +367,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const dateInput = document.getElementById("my-date-picker");
+
+  if (
+    dateInput instanceof HTMLInputElement &&
+    typeof dateInput.showPicker === "function"
+  ) {
+    dateInput.addEventListener("click", () => dateInput.showPicker());
+  }
+});
