@@ -48,7 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
   galleries.forEach((gallery) => {
     const mainImage = gallery.querySelector(".gallery-main");
     const thumbnails = gallery.querySelectorAll(".gallery-thumbnail");
-
+    const leftArrow = gallery.querySelector(".gallery-prev");
+    const rightArrow = gallery.querySelector(".gallery-next");
     thumbnails.forEach((thumbnail) => {
       thumbnail.addEventListener("click", () => {
         mainImage.src = thumbnail.dataset.fullSrc;
@@ -57,12 +58,25 @@ document.addEventListener("DOMContentLoaded", () => {
           "data-index",
           thumbnail.getAttribute("data-index"),
         );
+        // Update arrow visibility based on the current index
+        let currentIndex = parseInt(mainImage.getAttribute("data-index"));
+        if (currentIndex == 0) {
+          leftArrow.style.display = "none";
+        } else {
+          leftArrow.style.display = "block";
+        }
+        if (currentIndex == thumbnails.length - 1) {
+          rightArrow.style.display = "none";
+        } else {
+          rightArrow.style.display = "block";
+        }
       });
     });
   });
 });
 
-// Service section gallery arrows
+// Service section gallery arrows - TO DO one day consolidate code into generalized functions
+// Note - only the click zones really need this script because their z index is higher than the arrows
 document.addEventListener("DOMContentLoaded", () => {
   const galleries = document.querySelectorAll(".service-gallery");
 
@@ -83,6 +97,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const thumbnail = thumbnails[currentIndex];
         mainImage.src = thumbnail.dataset.fullSrc;
         mainImage.alt = thumbnail.alt;
+        rightArrow.style.display = "block";
+      }
+      if (currentIndex == 0) {
+        leftArrow.style.display = "none";
       }
     });
     leftSide.addEventListener("click", () => {
@@ -93,6 +111,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const thumbnail = thumbnails[currentIndex];
         mainImage.src = thumbnail.dataset.fullSrc;
         mainImage.alt = thumbnail.alt;
+        rightArrow.style.display = "block";
+      }
+      if (currentIndex == 0) {
+        leftArrow.style.display = "none";
       }
     });
     rightArrow.addEventListener("click", () => {
@@ -102,7 +124,11 @@ document.addEventListener("DOMContentLoaded", () => {
         mainImage.setAttribute("data-index", currentIndex);
         const thumbnail = thumbnails[currentIndex];
         mainImage.src = thumbnail.dataset.fullSrc;
-        mainImage.alt = thumbnail.alt;
+        mainImage.alt = thumbnail.alt;        
+        leftArrow.style.display = "block";
+      }
+      if (currentIndex == thumbnails.length - 1) {
+        rightArrow.style.display = "none";
       }
     });
     rightSide.addEventListener("click", () => {
@@ -113,6 +139,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const thumbnail = thumbnails[currentIndex];
         mainImage.src = thumbnail.dataset.fullSrc;
         mainImage.alt = thumbnail.alt;
+        leftArrow.style.display = "block";
+      }
+      if (currentIndex == thumbnails.length - 1) {
+        rightArrow.style.display = "none";
       }
     });
   });

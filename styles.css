@@ -707,6 +707,9 @@ div.gallery figure img {
   user-select: none;
   -webkit-user-drag: none;
 }
+.gallery-prev {
+  display: none;
+}
 
 .modal-prev,
 .gallery-prev {
