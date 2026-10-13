@@ -603,6 +603,7 @@ img.navbar-logo {
 
 .gallery figure {
   position: relative; /* Establish a positioning context */
+  isolation: isolate;
   overflow: hidden; /* Ensure content doesn't overflow */
   transition:
     transform 0.3s ease,

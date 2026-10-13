@@ -2,7 +2,7 @@ MOST IMPORTANT
 new schema
 add strong tags for keywords?
 make thumbnails for home page gallery - script edits
-change hero to include location, services - do SEO for headers correctly
+change hero to include location, services - do SEO for headers correctly, image tags
 adjust mobile image size for both pages according to page speed insights - ask chatgpt
 services page - book now button for each section prefills out form with request
 sqoosh logos, services images?
@@ -18,6 +18,8 @@ Teaching/private lessons page
  booking and contact section mashup? AI ideas
 color+font refinement
 add my paypal/venmo
+gigsalad link on contact page below my form
+chrystal website link (recommended entertainment section)
 
 ------------------------
 
