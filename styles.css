@@ -102,7 +102,7 @@ body {
     0.6px 0.6px 0 rgb(0, 63, 44);
 }
 
-h1.title {
+h1.title, p.title {
   font-family: "Great Vibes", cursive;
   font-weight: 600;
   letter-spacing: 6px;
@@ -170,7 +170,7 @@ p.low-weight {
 }
 
 @media (min-width: 768px) {
-  h1.hero-title {
+  p.hero-title {
     font-size: 7rem;    
     letter-spacing: 10px;
   }
@@ -360,12 +360,13 @@ a.navbar-button:hover {
   position: relative;
   isolation: isolate;
   clip-path: inset(0);
+  min-height: 58vh;
 }
 
 /* Fixed (parallax) hero image; clip-path on .hero keeps it inside the section */
 .hero-bg {
   position: fixed;
-  top: 0px;
+  top: 0rem;
   left: 0;
   width: 100vw;
   height: 70vh;

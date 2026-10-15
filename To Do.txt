@@ -1,13 +1,11 @@
 SEO
 new schema
-add strong tags for keywords? do SEO for headers correctly, image tags
+add strong tags for keywords? do SEO for headers (home*) correctly, image tags (home*)
 OPTIMIZE
-adjust mobile image size for both pages according to page speed insights - ask chatgpt, banner on contact page also
-sqoosh logos, services images?
-make thumbnails for home page gallery - script edits
+(home*)adjust mobile image size for both pages according to page speed insights
+sqoosh services images?
 optimize font/script loading times
 scrolling hero image / short video slomo
-change hero page blurb
 PAGES
 Teaching/private lessons page
  About section its own page - profile pic column? Link to EPK page or document?
