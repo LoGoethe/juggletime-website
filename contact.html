@@ -32,16 +32,17 @@
   <link rel="manifest" href="/favicon/site.webmanifest" />
   <link rel="canonical" href="https://www.juggletimeentertainment.com/contact.html">
   <script defer src="script.js"></script>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KHG1ECFP6J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KHG1ECFP6J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-KHG1ECFP6J');
-</script>
+    gtag('config', 'G-KHG1ECFP6J');
+  </script>
+</head>
+
 
 
 <body class="has-navbar-fixed-top">
@@ -50,7 +51,7 @@
   <nav class="navbar customnav is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item logo-container" href="/">
-        <img src="images/logo/juggletime-logo-navbar.png" alt="Juggletime Entertainment logo" class="navbar-logo">
+        <img src="images/logo/juggletime-logo-navbar.webp"  alt="Juggletime Entertainment logo" class="navbar-logo is-fullwidth" loading="eager" fetchpriority="high" decoding="async">
       </a>
       <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
         <span aria-hidden="true"></span>
@@ -75,11 +76,11 @@
   </nav>
 
   <!-- Contact  Title -->
-  <section class="section gradient outlined-text has-text-centered" id="contactTitle">
+  <section role="main" class="section gradient outlined-text has-text-centered" id="contactTitle">
     <div class="block">
       <figure class="image ">
-        <img class="banner mt-3" src="images/JT-images-banner.png"
-          alt="JuggleTime Entertainment banner with logo and various performance pictures">
+        <img class="banner mt-3" src="images/JT-images-banner.webp"
+          alt="JuggleTime Entertainment banner with logo and various performance pictures" loading="eager" fetchpriority="high" decoding="async" >
       </figure>
       <br>
       <br>
@@ -104,56 +105,57 @@
       <div class="column is-two-thirds is-offset-2">
         <h3 class="is-size-3 has-text-weight-bold has-text-centered">Booking Inquiry Form</h3>
         <form action="https://formspree.io/f/xpwdnejn" method="POST">
+          <input class="is-hidden" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
           <div class="field">
-            <label class="label has-text-left">Name</label>
+            <label class="label has-text-left" for="name">Name *</label>
             <div class="control has-icons-left">
-              <input required name="name" type="text" class="input" placeholder="e.g. Jeff Goldblum">
-              <span class="icon is-small is-left">
+              <input required name="name" id="name" type="text" class="input" placeholder="e.g. Jeff Goldblum" autocomplete="name">
+              <span class="icon is-small is-left" aria-hidden="true">
                 <i class="fa fa-user"></i>
               </span>
             </div>
           </div>
           <div class="field">
-            <label class="label has-text-left">Email</label>
+            <label class="label has-text-left" for="email">Email *</label>
             <div class="control has-icons-left">
-              <input required name="email" type="email" class="input" placeholder="e.g. jeffgoldblum@gmail.com">
-              <span class="icon is-small is-left">
+              <input required name="email" id="email" type="email" class="input" placeholder="e.g. jeffgoldblum@gmail.com" autocomplete="email">
+              <span class="icon is-small is-left" aria-hidden="true">
                 <i class="fa fa-envelope"></i>
               </span>
             </div>
           </div>
           <div class="field">
-            <label class="label has-text-left">Phone</label>
+            <label class="label has-text-left" for="phone">Phone</label>
             <div class="control has-icons-left">
-              <input name="phone" type="tel" class="input" placeholder="e.g. (123) 456-7890">
-              <span class="icon is-small is-left">
+              <input name="phone" id="phone" type="tel" class="input" placeholder="e.g. (123) 456-7890" autocomplete="tel">
+              <span class="icon is-small is-left" aria-hidden="true">
                 <i class="fa fa-phone"></i>
               </span>
             </div>
           </div>
           <div class="field">
-            <label class="label has-text-left">Event Date</label>
+            <label class="label has-text-left" for="my-date-picker">Event Date</label>
             <div class="control has-icons-left">
-              <input name="event_date" type="date" class="input" id="my-date-picker">
-              <span class="icon is-small is-left">
+              <input name="event_date" id="my-date-picker" type="date" class="input">
+              <span class="icon is-small is-left" aria-hidden="true">
                 <i class="fa fa-calendar"></i>
               </span>
             </div>
           </div>
           <div class="field">
-            <label class="label has-text-left">Event Location</label>
+            <label class="label has-text-left" for="event_location">Event Location</label>
             <div class="control has-icons-left">
-              <input name="event_location" type="text" class="input" placeholder="e.g. City, state, venue">
-              <span class="icon is-small is-left">
+              <input name="event_location" id="event_location" type="text" class="input" placeholder="e.g. City, state, venue">
+              <span class="icon is-small is-left" aria-hidden="true">
                 <i class="fa fa-map-marker"></i>
               </span>
             </div>
           </div>
           <div class="field">
-            <label class="label has-text-left">Event Type</label>
+            <label class="label has-text-left" for="event_type">Event Type</label>
             <div class="control has-icons-left">
               <div class="select">
-                <select name="event_type">
+                <select name="event_type" id="event_type">
                   <option value="" selected disabled>Select an option</option>
                   <option value="Corporate Event">Corporate Event</option>
                   <option value="Private Party">Private Party</option>
@@ -163,65 +165,67 @@
                   <option value="Sports Event">Sports Event</option>
                   <option value="Other">Other</option>
                 </select>
-                <span class="icon is-small is-left">
+                <span class="icon is-small is-left" aria-hidden="true">
                   <i class="fa fa-briefcase"></i>
                 </span>
               </div>
             </div>
           </div>
           <div class="field">
-            <label class="label has-text-left">Entertainment Options</label>
-            <div class="columns is-variable is-4 entertainment-options">
-              <div class="column">
-                <label class="checkbox is-block mb-2">
-                  <input type="checkbox" name="entertainment_options[]" value="Juggling Performers">
-                  Juggling Performers
-                </label>
-                <label class="checkbox is-block mb-2">
-                  <input type="checkbox" name="entertainment_options[]" value="Fire Show">
-                  Fire Show
-                </label>
-                <label class="checkbox is-block mb-2">
-                  <input type="checkbox" name="entertainment_options[]" value="Stilt Walkers / Characters">
-                  Stilt Walkers / Characters
-                </label>
-                <label class="checkbox is-block mb-2">
-                  <input type="checkbox" name="entertainment_options[]" value="Acrobats">
-                  Acrobats
-                </label>
+            <fieldset class="field-group">
+              <legend class="label has-text-left">Entertainment Options</legend>
+              <div class="columns is-variable is-4 entertainment-options">
+                <div class="column">
+                  <label class="checkbox is-block mb-2">
+                    <input type="checkbox" name="entertainment_options[]" value="Juggling Performers">
+                    Juggling Performers
+                  </label>
+                  <label class="checkbox is-block mb-2">
+                    <input type="checkbox" name="entertainment_options[]" value="Fire Show">
+                    Fire Show
+                  </label>
+                  <label class="checkbox is-block mb-2">
+                    <input type="checkbox" name="entertainment_options[]" value="Stilt Walkers / Characters">
+                    Stilt Walkers / Characters
+                  </label>
+                  <label class="checkbox is-block mb-2">
+                    <input type="checkbox" name="entertainment_options[]" value="Acrobats">
+                    Acrobats
+                  </label>
+                </div>
+                <div class="column">
+                  <label class="checkbox is-block mb-2">
+                    <input type="checkbox" name="entertainment_options[]" value="Aerialists">
+                    Aerialists
+                  </label>
+                  <label class="checkbox is-block mb-2">
+                    <input type="checkbox" name="entertainment_options[]" value="MC Services">
+                    MC Services
+                  </label>
+                  <label class="checkbox is-block mb-2">
+                    <input type="checkbox" name="entertainment_options[]" value="Children's Entertainment">
+                    Children's Entertainment
+                  </label>
+                  <label class="checkbox is-block mb-2">
+                    <input type="checkbox" name="entertainment_options[]" value="Other Entertainment">
+                    Other Entertainment
+                  </label>
+                </div>
               </div>
-              <div class="column">
-                <label class="checkbox is-block mb-2">
-                  <input type="checkbox" name="entertainment_options[]" value="Aerialists">
-                  Aerialists
-                </label>
-                <label class="checkbox is-block mb-2">
-                  <input type="checkbox" name="entertainment_options[]" value="MC Services">
-                  MC Services
-                </label>
-                <label class="checkbox is-block mb-2">
-                  <input type="checkbox" name="entertainment_options[]" value="Children's Entertainment">
-                  Children's Entertainment
-                </label>
-                <label class="checkbox is-block mb-2">
-                  <input type="checkbox" name="entertainment_options[]" value="Other Entertainment">
-                  Other Entertainment
-                </label>
-              </div>
-            </div>
+            </fieldset>
           </div>
           <div class="field">
-            <label class="label has-text-left">Event Details</label>
+            <label class="label has-text-left" for="event_details">Event Details</label>
             <div class="control">
-              <textarea name="event_details" class="textarea" rows="4"
+              <textarea name="event_details" id="event_details" class="textarea" rows="4"
                 placeholder="Venue details, performance ideas, themes, special requests, etc."></textarea>
             </div>
           </div>
           <div class="field">
-            <label class="label has-text-left">How did you hear about us?</label>
+            <label class="label has-text-left" for="referral_source">How did you hear about us?</label>
             <div class="control">
-              <textarea name="referral_source" class="textarea" rows="1"
-                placeholder="Let us know how you heard about us"></textarea>
+              <input type="text" name="referral_source" id="referral_source" class="input"
+                placeholder="Google search, GigSalad, a friend...">
             </div>
           </div>
           <br>
@@ -326,7 +330,7 @@
 
 
   <!-- Footer -->
-  <footer id="contact" class="footer paddingsmall rev-gradient outlined-text">
+  <footer role="contentinfo" id="contact" class="footer paddingsmall rev-gradient outlined-text">
     <div class="container ">
       <div class="columns is-centered">
         <div class="column is-one-third has-text-centered">
@@ -395,8 +399,8 @@
         <div class="columns">
           <div class="column is-one-third has-text-centered">
             <a href="/">
-              <img src="images/logo/juggletime-logo-navbar.png" style="max-width:60%"
-                alt="Juggletime Entertainment logo">
+              <img src="images/logo/juggletime-logo-navbar.webp" class="is-fullwidth" style="max-width:60%"
+                alt="JuggleTime Entertainment Logo" loading="lazy" decoding="async">
             </a>
           </div>
           <div class="column is-two-thirds">

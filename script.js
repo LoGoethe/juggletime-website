@@ -376,5 +376,10 @@ document.addEventListener("DOMContentLoaded", () => {
     typeof dateInput.showPicker === "function"
   ) {
     dateInput.addEventListener("click", () => dateInput.showPicker());
+
+    // Built from local date parts; toISOString() would use UTC and can show tomorrow's date in the evening.
+    const today = new Date();
+    const pad = (n) => String(n).padStart(2, "0");
+    dateInput.min = `${today.getFullYear()}-${pad(today.getMonth() + 1)}-${pad(today.getDate())}`;
   }
 });

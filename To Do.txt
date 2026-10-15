@@ -1,8 +1,6 @@
 SEO
-Home page remove myself and put where, who, how
 new schema
-add strong tags for keywords?
-change hero to include location, services - do SEO for headers correctly, image tags
+add strong tags for keywords? do SEO for headers correctly, image tags
 OPTIMIZE
 adjust mobile image size for both pages according to page speed insights - ask chatgpt, banner on contact page also
 sqoosh logos, services images?
