@@ -61,10 +61,13 @@
     <div class="navbar-menu" id="navMenu">
       <div class="navbar-end">
         <div class="navbar-item nav-links">
-          <a class="navbar-item" href="/" aria-current="page">Home</a><span class="nav-dot">&#8226;</span>
-          <a class="navbar-item" href="#gallery">Gallery</a><span class="nav-dot">&#8226;</span>
-          <a class="navbar-item" href="/services.html">Services</a><span class="nav-dot">&#8226;</span>          
-          <a class="navbar-item" href="/contact.html">Contact</a>
+          <a class="navbar-item is-size-5" href="/" aria-current="page">Home</a><span class="nav-dot">&#8226;</span>
+          <a class="navbar-item is-size-5" href="#gallery">Gallery</a><span class="nav-dot">&#8226;</span>
+          <a class="navbar-item is-size-5" href="/services.html">Services</a><span class="nav-dot">&#8226;</span>          
+          <a class="navbar-item is-size-5" href="/contact.html">Contact</a><span class="nav-dot">&#8226;</span>
+          <a href="/contact.html#booking" class="navbar-item button is-medium square navbar-button">
+            Book Now
+          </a>
         </div>
       </div>
     </div>
@@ -74,29 +77,29 @@
   <section id="home" class="hero is-large">
     <img src="images/home/hero-logan-juggling-clubs.webp" alt="" loading="eager" class="hero-bg" fetchpriority="high"
       decoding="async">
-    <div class="hero-body has-text-centered outlined-text">
-      <div class="container">
-        <h1 class="title hero-title">JuggleTime Entertainment</h1>
+    <div class="hero-body has-text-centered">
+      <div class="container background-blur">
+        <h1 class="title hero-title  outlined-text">JuggleTime Entertainment</h1>
         <br>
         <br>
         <br>
-        <p class="is-size-3-desktop is-size-4-mobile is-spaced" style="text-shadow: 2px 2px 2px rgb(0, 29, 22);">
+        <p class="is-size-3-desktop is-size-4-mobile is-spaced  outlined-text" style="text-shadow: 2px 2px 2px rgb(0, 29, 22);">
           Captivating performances. World-class juggling. Unforgettable moments for every event.
         </p>
         <br>
         <br>
         <div class="block">
           <a href="/contact.html#booking" class="button is-large square" id="herobutton">
-            Book Now
+            <b>Book Now</b>
           </a>
         </div>
         <br>
         <br>
-        <p class="is-italic is-size-5-mobile is-size-4-desktop" style="text-shadow: 2px 2px 2px rgb(0, 29, 22);">
+        <p class="is-italic is-size-5-mobile is-size-4-desktop  outlined-text" style="text-shadow: 2px 2px 2px rgb(0, 29, 22);">
           Presented by your ringmaster of marvel and whimsy…
         </p>
         <br>
-        <h2 class="is-size-2 is-spaced">Logan Goethe
+        <h2 class="is-size-2 is-spaced outlined-text">Logan Goethe
         </h2>
         <div class="line-wrapper is-size-5 animate-lines">
           <span class="line-starleft"></span>
@@ -122,7 +125,7 @@
   <!-- Performances -->
   <section class="section stripes outlined-text" id="performances">
     <div class="container has-text-centered">
-      <h2 class="is-spaced section-title">
+      <h2 class="is-spaced section-title mb-5">
         Performances
       </h2>
       <div class="columns gallery">
@@ -133,7 +136,7 @@
               alt="Circus performer passing juggling clubs with partner" loading="eager" fetchpriority="high"
               decoding="async">
             <figcaption class="figtext">
-              <h3 class="is-size-3">Stage Shows</h3>
+              <h3 class="is-size-3">Stage Acts</h3>
             </figcaption>
           </figure>
           <div class="box-transparency">
@@ -183,12 +186,12 @@
       <div class="content">
         <!-- To do: Lots of inline styling here  -->
         <p class="triple-stars is-size-4">✦ ✦ ✦</p>
-        <p class="is-size-4">
-          Explore Our Services ↓</p>
+        <p class="is-size-3">
+          And More! <br>Explore Our Services ↓</p>
       </div>
       <p>
         <a href="services.html" class="button is-large square" id="herobutton">
-          Services
+          <b>Services</b>
         </a>
       </p>
       <br>
@@ -219,7 +222,7 @@
   <!-- Experience   -->
   <section class="section experience">
     <img src="images/home/experience-fire-sword.webp" alt="" loading="lazy" class="experience-bg" decoding="async">
-    <div class="container has-text-centered experienceimg-body outlined-text">
+    <div class="container has-text-centered experienceimg-body outlined-text background-blur">
       <h2 class="section-title">
         Experience
       </h2>
@@ -464,7 +467,7 @@
   </div>
 
   <!-- About section-->
-  <section class="section stripes outlined-text" id="about">
+  <section class="section rev-gradient outlined-text" id="about">
     <div class="container has-text-centered block">
       <h2 class="is-spaced section-title">About
       </h2>
@@ -492,6 +495,18 @@
       </div>
     </div>
   </section>
+
+    <!-- Colorline -->
+    <div id="colorline" class="columns is-mobile">
+      <div class="column has-background-jt-teal">
+      </div>
+      <div class="column has-background-jt-teal-light">
+      </div>
+      <div class="column has-background-jt-purple-light">
+      </div>
+      <div class="column has-background-jt-purple">
+      </div>
+    </div>
 
   <!-- Footer -->
   <footer id="contact" class="footer paddingsmall gradient outlined-text">
