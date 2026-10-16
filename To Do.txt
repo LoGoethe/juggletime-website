@@ -1,5 +1,4 @@
 SEO
-new schema
 add strong tags for keywords? do SEO for headers (home*) correctly, image tags (home*)
 OPTIMIZE
 (home*)adjust mobile image size for both pages according to page speed insights
@@ -11,7 +10,7 @@ Teaching/private lessons page
  About section its own page - profile pic column? Link to EPK page or document?
  booking - 
     google busines link once i have reviews
-    services page book now buttons for each section prefills out form with request
+    individual services pages - book now buttons for each section prefills out form with request
     chrystal website link (recommended entertainment section)
     logos to contact page of business ive worked with - aubrey page, chrystal, river city, spain national team, novahan, etc
     FAQ
@@ -26,6 +25,7 @@ Tip paypall venmo in my thankyou/review request followup?
 After changes generally:
 update sitemap, other random bs
 Accessibility check
+new schema
 SEO check
 URL inspection/Indexing - google analytics stuff
 
