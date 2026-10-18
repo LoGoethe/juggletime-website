@@ -2,9 +2,10 @@ SEO
 add strong tags for keywords? do SEO for headers (home*) correctly, image tags (home*)
 OPTIMIZE
 (home*)adjust mobile image size for both pages according to page speed insights
-sqoosh services images?
+ alt text/filename seo
 optimize font/script loading times
 scrolling hero image / short video slomo
+LLMS/TXT
 PAGES
 Teaching/private lessons page
  About section its own page - profile pic column? Link to EPK page or document?
@@ -14,6 +15,7 @@ Teaching/private lessons page
     chrystal website link (recommended entertainment section)
     logos to contact page of business ive worked with - aubrey page, chrystal, river city, spain national team, novahan, etc
     FAQ
+    custom form submission landing page
  Burlesque hidden page
 STYLE
 color+font refinement
