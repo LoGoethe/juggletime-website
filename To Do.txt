@@ -7,7 +7,8 @@ optimize font/script loading times
 scrolling hero image / short video slomo
 LLMS/TXT
 PAGES
-Teaching/private lessons page
+ Teaching/private lessons page
+ Juggling services page - 'flying knives' name for knife act, names for LED/Fire?
  About section its own page - profile pic column? Link to EPK page or document?
  booking - 
     google busines link once i have reviews
